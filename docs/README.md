@@ -194,8 +194,8 @@ Estes são os protótipos de telas do sistema.
 | API de mapas                | Google Maps API     | https://developers.google.com/maps                                                   |
 
 ## Gerenciamento do Projeto
-
-
+Metologia KanBan
+![KanBan](Kanban.jpg)
 
 ## Referências
 
