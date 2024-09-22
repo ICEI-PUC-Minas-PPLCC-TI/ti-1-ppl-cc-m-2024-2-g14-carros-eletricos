@@ -3,7 +3,7 @@
 Informações básicas do projeto.
 
 * **Projeto:** [Falta de incentivo à carros elétricos]
-* **Repositório GitHub:** [Link](Miro.pdf)
+* **Repositório GitHub:** [Link](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g14-carros-eletricos)
 * **Membros da equipe:**
 
   * [Henrique Gonçalves Pimenta Velloso](https://github.com/osohenri)
@@ -22,7 +22,7 @@ A documentação do projeto é estruturada da seguinte forma:
 6. Solução
 7. Referências Bibliográficas
 
-✅ [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
+✅ [Documentação de Design Thinking (MIRO)](files/Miro.pdf)
 
 # Contexto
 
