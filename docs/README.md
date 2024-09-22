@@ -159,7 +159,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 Estes são os protótipos de telas do sistema.
 
-![Wireframe](files/WireFrame-site.pdf)
+[Wireframe](files/WireFrame-site.pdf)
 
 ![Page 1](Page1-WireFrame.png)
 
@@ -186,7 +186,7 @@ Estes são os protótipos de telas do sistema.
 | Ambiente                    | Plataforma          | Link de acesso                                                                       |
 | --------------------------- | ------------------- | ------------------------------------------------------------------------------------ |
 | Editor de código            | Visual Studio Code  | https://code.visualstudio.com                                                        |
-| Repositório de código       | GitHub              | https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g14-carros-eletricos |
+| Repositório de código       | GitHub              | https://github.com/                                                                  |
 | Comunicação em equipe       | Discord             | https://discord.com                                                                  |
 | Diagramação e prototipagem  | Figma               | https://www.figma.com                                                                |
 | Processo de Design Thinking | Miro                | https://miro.com                                                                     |
