@@ -2,13 +2,15 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** [NOME DO PROJETO]
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
+* **Projeto:** [Falta de incentivo à carros elétricos]
+* **Repositório GitHub:** [[Link](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g14-carros-eletricos)]
 * **Membros da equipe:**
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+  * [Henrique Gonçalves Pimenta Velloso](https://github.com/osohenri)
+  * [João Vitor de Alvarenga Alvares](https://github.com/joaovitoralvarenga)
+  * [Lucca Sander Frisso](https://github.com/Lsanderf)
+  * [Luciano Gomes Eudes](https://github.com/llucianoeudes)
+  * [Ernando Gabriel Antunes de Olievira](https://github.com/ErnandoGA)
 
 A documentação do projeto é estruturada da seguinte forma:
 
