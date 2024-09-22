@@ -11,7 +11,7 @@ Uma das bases do projeto é permitir a identificação de pontos de carregamento
 * Henrique Gonçalves Pimenta Velloso
 * Lucca Sander Frisso
 * Luciano Gomes Eudes
-* Ernando Gabriel Antunes de Olievira
+* Ernando Gabriel Antunes de Oliveira
 
 ## Professores responsáveis
 

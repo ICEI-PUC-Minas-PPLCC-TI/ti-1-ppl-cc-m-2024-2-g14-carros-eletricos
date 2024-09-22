@@ -3,14 +3,14 @@
 Informações básicas do projeto.
 
 * **Projeto:** [Falta de incentivo à carros elétricos]
-* **Repositório GitHub:** [[Link](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g14-carros-eletricos)]
+* **Repositório GitHub:** [Link](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g14-carros-eletricos)]]
 * **Membros da equipe:**
 
   * [Henrique Gonçalves Pimenta Velloso](https://github.com/osohenri)
   * [João Vitor de Alvarenga Alvares](https://github.com/joaovitoralvarenga)
   * [Lucca Sander Frisso](https://github.com/Lsanderf)
   * [Luciano Gomes Eudes](https://github.com/llucianoeudes)
-  * [Ernando Gabriel Antunes de Olievira](https://github.com/ErnandoGA)
+  * [Ernando Gabriel Antunes de Oliveira](https://github.com/ErnandoGA)
 
 A documentação do projeto é estruturada da seguinte forma:
 
@@ -30,168 +30,118 @@ A falta de incentivo à carros elétricos, principalmente quando se trata da inf
 
 ## Problema
 
-* O suporte de infraestrutura para veículos elétricos, especialmente no Brasil, é baixa
+* O suporte de infraestrutura para veículos elétricos, especialmente no Brasil, é baixa;
 
-* Proprietários e potenciais compradores de veículos elétricos sentem dificuldade ao localizar pontos de carregamento baratos, bons e próximos
+* Proprietários e potenciais compradores de veículos elétricos sentem dificuldade ao localizar pontos de carregamento baratos, bons e próximos;
 
-* A infraestrutura inadequada agrava o problema
+* A infraestrutura inadequada agrava o problema;
 
-* A demanda por serviços de carregamento de veículos elétricos aumenta em cidades maiores
+* A demanda por serviços de carregamento de veículos elétricos aumenta em cidades maiores.
 
 
 ## Objetivos
 
-* O objetivo geral deste projeto é desenvolver um software que solucione o problema da falta de infraestrutura e informação para proprietários e potenciais compradores de carros elétricos
+* O objetivo geral deste projeto é desenvolver um software que solucione o problema da falta de infraestrutura e informação para proprietários e potenciais compradores de carros elétricos:
 
-  * Facilitar o acesso a pontos de carregamento
+  * Facilitar o acesso a pontos de carregamento;
 
-  * Facilitar o acesso a informações sobre incentivos
+  * Facilitar o acesso a informações sobre incentivos;
 
 * Entre os objetivos específicos, destacam-se:
 
-  * Criar uma plataforma capaz de rastrear, em tempo real, a localização e a disponibilidade de estações de carregamento
+  * Criar uma plataforma capaz de rastrear, em tempo real, a localização e a disponibilidade de estações de carregamento;
 
-  * Planejamento de rotas com estações de recarga 
+  * Planejamento de rotas com estações de recarga;
 
-  * Oferecer dados detalhados como tipo de conector e custo
+  * Oferecer dados detalhados como tipo de conector e custo;
 
-  * Simulador de viabilidade econômica
+  * Simulador de viabilidade econômica;
 
-  * Tabela de preços
+  * Tabela de preços.
 
 
 ## Justificativa
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A escolha deste assunto é motivada pela falta de infraestrutura adequada para veículos elétricos, dificultando a adoção desses veículos. O objetivo é desenvolver uma aplicação que facilitaria o acesso às estações de carregamento e forneceria informações sobre subsídios e incentivos para ajudar os clientes e fazer do uso de carros elétricos uma decisão mais aberta e fácil. Destinada a consumidores, a solução será embasada em questionários e resultados estatísticos para entender o que é essencial para o público.
 
 ## Público-Alvo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+* Proprietários de carros elétricos: Usuários que já possuem veículos elétricos e buscam facilitar seu uso diário;
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+* Potenciais compradores: Pessoas interessadas em adquirir veículos elétricos, mas que estão em fase de pesquisa sobre a viabilidade prática e os benefícios financeiros.
 
 # Product Discovery
 
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
+![Matriz CSD](image.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+![Mapa de Stakeholders](image-1.png)
+
+![Entrevistas qualitativas](image-3.png)
+
+![Highlights de pesquisa](image-4.png)
+
 
 ## Etapa de Definição
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+![Persona 1](image-8.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+![Persona 2](image-9.png)
+
+![Persona 3](image-10.png)
 
 # Product Design
-
-Nesse momento, vamos transformar os insights e validações obtidos em soluções tangíveis e utilizáveis. Essa fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que detalham a interface e a experiência do usuário.
 
 ## Histórias de Usuários
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-| EU COMO...`PERSONA` | QUERO/PRECISO ...`FUNCIONALIDADE`        | PARA ...`MOTIVO/VALOR`               |
-| --------------------- | ------------------------------------------ | -------------------------------------- |
-| Usuário do sistema   | Registrar minhas tarefas ⚠️ EXEMPLO ⚠️ | Não esquecer de fazê-las             |
-| Administrador         | Alterar permissões ⚠️ EXEMPLO ⚠️      | Permitir que possam administrar contas |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
->
-> **Orientações**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+| EU COMO...                                      | QUERO/PRECISO ...                                                | PARA ...                                       |
+| ----------------------------------------------- |  --------------------------------------------------------------- | ---------------------------------------------- |
+| Proprietário de carro elétrico                  | Saber onde existem pontos de recarga                             | Fazer viagens longas com mais segurança        |
+| Potencial comprador de carro elétrico           | Ter noção de custos e opções de compra de um carro               | Calcular o custo-benefício                     |
+| Potencial comprador de carro elétrico           | Entender as vantagens de adotar um carro elétrico                | Sentir que estou fazendo um bom negócio        |
+| Proprietário de carro elétrico com dificuldades | Otimizar minha rotina                                            | Minimizar as necessidades de carregamento      |
+| Potencial comprador de carro elétrico           | Motivação para considerar a troca do carro atual por um elétrico | Contribuir para um futuro mais sustentável     |
+| Potencial comprador de carro elétrico           | Ver a quantidade de pontos de recarga na minha região            | Avaliar se minhas necessidades serão atendidas |
 
 ## Proposta de Valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
+![Proposta para Persona 1](image-11.png)
 
-##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
+![Proposta para Persona 2](image-12.png)
 
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
+![Proposta para Persona 3](image-13.png)
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
 ### Requisitos Funcionais
 
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| ID     | Descrição do Requisito                                                | Prioridade |
+| ------ | --------------------------------------------------------------------- | ---------- |
+| RF-001 | Mapeamento dos pontos de recarga                                      | ALTA       |
+| RF-002 | Planejamento de rotas com estações de recarga                         | ALTA       |
+| RF-003 | Notícias relacionadas a carros elétricos                              | MÉDIA      |
+| RF-004 | Notificações personalizadas                                           | MÉDIA      |
+| RF-005 | Simulador de viabilidade econômica                                    | ALTA       |
+| RF-006 | Tabela de preços dos carros                                           | ALTA       |
+| RF-007 | Integração com navegação GPS                                          | ALTA       |
+| RF-008 | Comparador de postos                                                  | MÉDIA      |
+| RF-009 | Monitoramento de disponibilidade em tempo real                        | ALTA       |
+| RF-010 | Avaliações e rankings de postos de recarga                            | MÉDIA      |
 
 ### Requisitos não Funcionais
 
-| ID      | Descrição do Requisito                                                              | Prioridade |
-| ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s ⚠️ EXEMPLO ⚠️          | BAIXA      |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Os requisitos de um projeto são classificados em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Orientações**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+| ID      | Descrição do Requisito                                               | Prioridade |
+| ------- | -------------------------------------------------------------------- | ---------- |
+| RNF-001 | API do Google Maps                                                   | ALTA       |
+| RNF-002 | Site publicado no GitHub                                             | MÉDIA      |
+| RNF-003 | Tempo de carregamento reduzido                                       | ALTA       |
 
 ## Projeto de Interface
-
-Artefatos relacionados com a interface e a interacão do usuário na proposta de solução.
 
 ### Wireframes
 
