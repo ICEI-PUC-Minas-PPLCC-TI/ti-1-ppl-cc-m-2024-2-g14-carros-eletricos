@@ -237,3 +237,17 @@ Divisão de papéis no grupo e apresentação da estrutura da ferramenta de cont
 > - [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
 > - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
 > - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+
+## Referências
+
+As referências utilizadas no trabalho foram:
+
+* Documentação de ferramentas
+
+  * [Google Maps API](https://developers.google.com/maps)
+
+  * [GitHub Docs](https://pages.github.com)
+
+* Ferramentas e plataformas
+  
+  * [Figma](https://www.figma.com)  
