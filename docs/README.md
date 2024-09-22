@@ -26,33 +26,39 @@ A documentação do projeto é estruturada da seguinte forma:
 
 # Contexto
 
-Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
+A falta de incentivo à carros elétricos, principalmente quando se trata da infraestrutura de carregamento, ainda é uma barreira gigantesca para o crescimento desse mercado no Brasil. Assim, o projeto visa desenvolver um site que facilite o rastreamento de pontos de carregamento, fornecendo informações em tempo real sobre a localização, disponibilidade, tipo de conector e tarifas, além de educar o público sobre os benefícios dos veículos elétricos. A plataforma é direcionada, sobretudo, à proprietários e potenciais compradores de carros elétricos.
 
 ## Problema
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+* O suporte de infraestrutura para veículos elétricos, especialmente no Brasil, é baixa
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
->
-> **Orientações**:
->
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+* Proprietários e potenciais compradores de veículos elétricos sentem dificuldade ao localizar pontos de carregamento baratos, bons e próximos
+
+* A infraestrutura inadequada agrava o problema
+
+* A demanda por serviços de carregamento de veículos elétricos aumenta em cidades maiores
+
 
 ## Objetivos
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+* O objetivo geral deste projeto é desenvolver um software que solucione o problema da falta de infraestrutura e informação para proprietários e potenciais compradores de carros elétricos
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+  * Facilitar o acesso a pontos de carregamento
+
+  * Facilitar o acesso a informações sobre incentivos
+
+* Entre os objetivos específicos, destacam-se:
+
+  * Criar uma plataforma capaz de rastrear, em tempo real, a localização e a disponibilidade de estações de carregamento
+
+  * Planejamento de rotas com estações de recarga 
+
+  * Oferecer dados detalhados como tipo de conector e custo
+
+  * Simulador de viabilidade econômica
+
+  * Tabela de preços
+
 
 ## Justificativa
 
