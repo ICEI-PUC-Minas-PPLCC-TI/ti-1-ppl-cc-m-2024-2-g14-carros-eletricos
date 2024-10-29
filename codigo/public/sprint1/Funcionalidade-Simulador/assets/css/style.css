@@ -78,4 +78,7 @@
     border-radius: 4px;
     cursor: pointer;
 }
+#loadData {
+    background:linear-gradient(var(--linear-gradient)) ;
+}
 

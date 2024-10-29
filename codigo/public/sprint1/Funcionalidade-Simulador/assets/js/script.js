@@ -1,38 +1,82 @@
-document.getElementById("calculate").addEventListener("click", calcularEconomia);
 
-function calcularEconomia() {
-    // Obtém os valores dos campos de entrada
-    const distanciaAnual = parseFloat(document.getElementById("distance").value); // Distância anual em km
+function calculate() {
+    
+    const distancia = parseFloat(document.getElementById("distance").value);
+    const consumoC = parseFloat(document.getElementById("value").value);
+    const precoC = parseFloat(document.getElementById("price").value);
+    const consumoE = parseFloat(document.getElementById("consumption").value);
+    const precoE = parseFloat(document.getElementById("priceE").value);
 
-    // Valores para o carro a combustão
-    const consumoCombustao = parseFloat(document.getElementById("value").value); // Consumo médio (km/l)
-    const precoCombustivel = parseFloat(document.getElementById("price").value); // Preço do combustível (R$/litro)
-
-    // Valores para o carro elétrico
-    const consumoEletrico = parseFloat(document.getElementById("consumption").value); // Consumo médio (km/kWh)
-    const precoEnergia = parseFloat(document.getElementById("priceE").value); // Preço da energia (R$/kWh)
-
-    // Verifica se todos os campos foram preenchidos corretamente
-    if (isNaN(distanciaAnual) || isNaN(consumoCombustao) || isNaN(precoCombustivel) || isNaN(consumoEletrico) || isNaN(precoEnergia)) {
+    
+    if (isNaN(distancia) || isNaN(consumoC) || isNaN(precoC) || isNaN(consumoE) || isNaN(precoE)) {
         alert("Por favor, preencha todos os campos corretamente.");
         return;
     }
 
-    // Cálculo do custo total para o carro a combustão
-    const litrosUsados = distanciaAnual / consumoCombustao;
-    const custoCombustao = litrosUsados * precoCombustivel;
+    
+    const custoCombustao = (distancia / consumoC) * precoC;
+    const custoEletrico = (distancia / consumoE) * precoE;
 
-    // Cálculo do custo total para o carro elétrico
-    const kWhUsados = distanciaAnual / consumoEletrico;
-    const custoEletrico = kWhUsados * precoEnergia;
-
-    // Cálculo da economia anual ao optar pelo carro elétrico
+    
     const economia = custoCombustao - custoEletrico;
 
-    // Exibe os resultados na página
-    document.getElementById("total").innerHTML = `
-        Custo Anual (Carro a Combustão): R$ ${custoCombustao.toFixed(2)} <br>
-        Custo Anual (Carro Elétrico): R$ ${custoEletrico.toFixed(2)} <br>
-        Economia Anual ao optar pelo carro elétrico: R$ ${economia.toFixed(2)}
-    `;
+    
+    document.getElementById("total").innerText = `R$ ${economia.toFixed(2)}`;
+
+  
+    saveData(distancia, consumoC, precoC, consumoE, precoE, custoCombustao, custoEletrico, economia);
 }
+
+
+function saveData(distancia, consumoC, precoC, consumoE, precoE, custoC, custoE, economia) {
+    const data = {
+        distancia,
+        consumoC,
+        precoC,
+        consumoE,
+        precoE,
+        custoC,
+        custoE,
+        economia
+    };
+    
+    
+    let savedData = JSON.parse(localStorage.getItem("economiaDados")) || [];
+    savedData.push(data);
+    localStorage.setItem("economiaDados", JSON.stringify(savedData));
+}
+
+
+function loadData() {
+    // Recupera os dados do Local Storage
+    const savedData = JSON.parse(localStorage.getItem("economiaDados")) || [];
+    const resultsDiv = document.getElementById("savedResults");
+    resultsDiv.innerHTML = ""; // Limpa resultados anteriores
+
+    if (savedData.length === 0) {
+        resultsDiv.innerHTML = "<p>Nenhum dado salvo.</p>";
+        return;
+    }
+
+    savedData.forEach((data, index) => {
+        resultsDiv.innerHTML += `
+            <div>
+                <h4>Registro ${index + 1}</h4>
+                <p>Distância: ${data.distancia} km</p>
+                <p>Consumo Combustão: ${data.consumoC} km/l</p>
+                <p>Preço Combustível: R$ ${data.precoC}</p>
+                <p>Consumo Elétrico: ${data.consumoE} km/kWh</p>
+                <p>Preço Energia: R$ ${data.precoE}</p>
+                <p>Custo Anual (Carro a Combustão): R$ ${data.custoC.toFixed(2)}</p>
+                <p>Custo Anual (Carro Elétrico): R$ ${data.custoE.toFixed(2)}</p>
+                <p>Economia: R$ ${data.economia.toFixed(2)}</p>
+            </div>
+        `;
+    });
+}
+
+
+document.getElementById("calculate").addEventListener("click", calculate);
+
+
+document.addEventListener("DOMContentLoaded", loadData);
