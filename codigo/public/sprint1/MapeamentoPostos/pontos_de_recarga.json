@@ -1,0 +1,17 @@
+{
+    "pontosDeRecarga": [
+        {
+            "id": "1",
+            "nome": "Nissan",
+            "coordenadas": [-43.96071382348194, -19.962760741125653],
+            "endereco": "Av. Barão Homem de Melo, 3400 - Nova Granada, Belo Horizonte - MG, 30494-270",
+            "imagem": "posto1.png",
+            "informacoesAdicionais": {
+                "tipoDePlug": "2",
+                "potencia": "22 kW",
+                "precoPorKWh": "0.00",
+                "horarioFuncionamento": "10h às 22h"
+            }
+        }
+    ]
+}
