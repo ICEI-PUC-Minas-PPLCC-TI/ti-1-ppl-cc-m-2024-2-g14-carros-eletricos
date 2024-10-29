@@ -80,5 +80,10 @@
 }
 #loadData {
     background:linear-gradient(var(--linear-gradient)) ;
+    border: none;
+    padding:10px;
+    color:beige;
+    font-weight:bold;
+    cursor: pointer;
 }
 
