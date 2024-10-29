@@ -37,3 +37,34 @@ async function carregarPontosDeRecarga() {
                     </button>
                 </div>
             `;
+
+            marker.getElement().addEventListener('click', () => {
+
+                const popup = new mapboxgl.Popup({ closeOnClick: false })
+                    .setLngLat(ponto.coordenadas)
+                    .setHTML(popupContent)
+                    .addTo(map);
+
+                const favoritarButton = document.getElementById(`favoritar-button-${ponto.id}`);
+                favoritarButton.onclick = () => {
+
+                    const isFavorito = favoritos.includes(ponto.id);
+
+                    if (isFavorito) {
+                        favoritos = favoritos.filter(id => id !== ponto.id);
+                    } else {
+                        favoritos.push(ponto.id);
+                    }
+
+                    document.getElementById(`favoritado-${ponto.id}`).innerText = favoritos.includes(ponto.id) ? 'Sim' : 'Não';
+                    document.getElementById(`favorito-icon-${ponto.id}`).className = favoritos.includes(ponto.id) ? 'fas fa-heart' : 'far fa-heart'; // Atualiza o ícone
+
+                    localStorage.setItem('favoritos', JSON.stringify(favoritos));
+                };
+            });
+        });
+    } catch (error) {
+        console.error('Erro:', error);
+    }
+}
+carregarPontosDeRecarga();
