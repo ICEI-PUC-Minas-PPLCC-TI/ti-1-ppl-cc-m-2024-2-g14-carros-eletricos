@@ -46,3 +46,26 @@
     bottom: -10px; 
     left: 0;
 }
+
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+.input-field input {
+    background: transparent;
+    border:none;
+    border-bottom: 1px solid #00FA9A;
+    color: azure;
+    
+}
+.input-field input:focus {
+    outline: none;
+}
+
