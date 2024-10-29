@@ -1,0 +1,154 @@
+{
+  "carros": [
+    {
+      "nome": "Seres 3",
+      "preco": "R$ 200.000",
+      "ano": 2020,
+      "marca": "Seres",
+      "modelo": "Seres 3",
+      "tipo": "SUV elétrico",
+      "imagem": "https://exemplo.com/imagens/seres3.jpg",
+      "link_venda": "https://www.driveseres.com.br/seres-3-bev"
+    },
+    {
+      "nome": "Chevrolet Bolt EV",
+      "preco": "R$ 220.000",
+      "ano": 2021,
+      "marca": "Chevrolet",
+      "modelo": "Bolt EV",
+      "tipo": "Hatch elétrico",
+      "imagem": "https://exemplo.com/imagens/chevrolet-bolt-ev.jpg",
+      "link_venda": "https://exemplo.com/bolt"
+    },
+    {
+      "nome": "Tesla Model 3",
+      "preco": "R$ 280.000",
+      "ano": 2022,
+      "marca": "Tesla",
+      "modelo": "Model 3",
+      "tipo": "Sedan elétrico",
+      "imagem": "https://exemplo.com/imagens/tesla-model-3.jpg",
+      "link_venda": "https://exemplo.com/model3"
+    },
+    {
+      "nome": "Nissan Leaf",
+      "preco": "R$ 190.000",
+      "ano": 2021,
+      "marca": "Nissan",
+      "modelo": "Leaf",
+      "tipo": "Hatch elétrico",
+      "imagem": "https://exemplo.com/imagens/nissan-leaf.jpg",
+      "link_venda": "https://exemplo.com/leaf"
+    },
+    {
+      "nome": "Audi e-tron",
+      "preco": "R$ 500.000",
+      "ano": 2022,
+      "marca": "Audi",
+      "modelo": "e-tron",
+      "tipo": "SUV elétrico",
+      "imagem": "https://exemplo.com/imagens/audi-etron.jpg",
+      "link_venda": "https://exemplo.com/etron"
+    },
+    {
+      "nome": "BMW i3",
+      "preco": "R$ 230.000",
+      "ano": 2020,
+      "marca": "BMW",
+      "modelo": "i3",
+      "tipo": "Hatch elétrico",
+      "imagem": "https://exemplo.com/imagens/bmw-i3.jpg",
+      "link_venda": "https://exemplo.com/i3"
+    },
+    {
+      "nome": "Renault Zoe",
+      "preco": "R$ 150.000",
+      "ano": 2021,
+      "marca": "Renault",
+      "modelo": "Zoe",
+      "tipo": "Hatch elétrico",
+      "imagem": "https://exemplo.com/imagens/renault-zoe.jpg",
+      "link_venda": "https://exemplo.com/zoe"
+    },
+    {
+      "nome": "Volkswagen ID.4",
+      "preco": "R$ 250.000",
+      "ano": 2022,
+      "marca": "Volkswagen",
+      "modelo": "ID.4",
+      "tipo": "SUV elétrico",
+      "imagem": "https://exemplo.com/imagens/volkswagen-id4.jpg",
+      "link_venda": "https://exemplo.com/id4"
+    },
+    {
+      "nome": "Jaguar I-PACE",
+      "preco": "R$ 400.000",
+      "ano": 2022,
+      "marca": "Jaguar",
+      "modelo": "I-PACE",
+      "tipo": "SUV elétrico",
+      "imagem": "https://exemplo.com/imagens/jaguar-ipace.jpg",
+      "link_venda": "https://exemplo.com/ipace"
+    },
+    {
+      "nome": "Porsche Taycan",
+      "preco": "R$ 800.000",
+      "ano": 2022,
+      "marca": "Porsche",
+      "modelo": "Taycan",
+      "tipo": "Sedan elétrico",
+      "imagem": "https://exemplo.com/imagens/porsche-taycan.jpg",
+      "link_venda": "https://exemplo.com/taycan"
+    },
+    {
+      "nome": "BYD Song Plus",
+      "preco": "R$ 210.000",
+      "ano": 2023,
+      "marca": "BYD",
+      "modelo": "Song Plus",
+      "tipo": "SUV elétrico",
+      "imagem": "https://exemplo.com/imagens/byd-song-plus.jpg",
+      "link_venda": "https://exemplo.com/songplus"
+    },
+    {
+      "nome": "Fiat 500e",
+      "preco": "R$ 180.000",
+      "ano": 2022,
+      "marca": "Fiat",
+      "modelo": "500e",
+      "tipo": "Compacto elétrico",
+      "imagem": "https://exemplo.com/imagens/fiat-500e.jpg",
+      "link_venda": "https://exemplo.com/500e"
+    },
+    {
+      "nome": "Mercedes-Benz EQC",
+      "preco": "R$ 490.000",
+      "ano": 2022,
+      "marca": "Mercedes-Benz",
+      "modelo": "EQC",
+      "tipo": "SUV elétrico",
+      "imagem": "https://exemplo.com/imagens/mercedes-eqc.jpg",
+      "link_venda": "https://exemplo.com/eqc"
+    },
+    {
+      "nome": "Hyundai Kona Electric",
+      "preco": "R$ 220.000",
+      "ano": 2021,
+      "marca": "Hyundai",
+      "modelo": "Kona Electric",
+      "tipo": "SUV elétrico",
+      "imagem": "https://exemplo.com/imagens/hyundai-kona.jpg",
+      "link_venda": "https://exemplo.com/kona"
+    },
+    {
+      "nome": "Mini Cooper SE",
+      "preco": "R$ 215.000",
+      "ano": 2021,
+      "marca": "Mini",
+      "modelo": "Cooper SE",
+      "tipo": "Compacto elétrico",
+      "imagem": "https://exemplo.com/imagens/mini-cooper-se.jpg",
+      "link_venda": "https://exemplo.com/cooperse"
+    }
+  ]
+}
