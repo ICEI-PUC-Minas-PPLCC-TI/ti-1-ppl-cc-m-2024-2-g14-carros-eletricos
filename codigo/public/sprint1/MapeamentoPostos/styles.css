@@ -21,10 +21,10 @@ nav a {
     font-weight: bold;
 }
 
-main {
-    padding-top: 60px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
-
 
 #map {
     position: absolute;
