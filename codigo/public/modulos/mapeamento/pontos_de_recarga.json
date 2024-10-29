@@ -5,7 +5,7 @@
             "nome": "Eletroposto Porto Seguro - Grecar Centro Automotivo",
             "coordenadas": [-43.978584, -19.944773],
             "endereco": "Av. Pres. Tancredo Neves, 3885 - Castelo, Belo Horizonte - MG, 31330-430",
-            "imagem": "posto1.png",
+            "imagem": "imgs/posto1.jpeg",
             "informacoesAdicionais": {
                 "tipoDePlug": "Tipo 2",
                 "potencia": "20 kW",
@@ -17,7 +17,7 @@
             "nome": "Motel Dubai BH",
             "coordenadas": [-43.968183, -19.918501],
             "endereco": "Anel Rodoviário Celso Mello Azevedo, 14020 - Alto Caiçaras, Belo Horizonte - MG, 30750-260",
-            "imagem": "posto2.png",
+            "imagem": "imgs/posto2.jpg",
             "informacoesAdicionais": {
                 "tipoDePlug": "Indisponível",
                 "potencia": "Indisponível",
@@ -29,7 +29,7 @@
             "nome": "Loja Elétrica Ltda",
             "coordenadas": [-43.974538, -19.921948],
             "endereco": "Av. Dom Pedro II, 3703 - Alto Caiçaras, Belo Horizonte - MG, 30720-460",
-            "imagem": "posto3.png",
+            "imagem": "imgs/posto3.jpeg",
             "informacoesAdicionais": {
                 "tipoDePlug": "Indisponível",
                 "potencia": "Indisponível",
@@ -41,7 +41,7 @@
             "nome": "Nissan",
             "coordenadas": [-43.960716, -19.926143],
             "endereco": "Av. do Contorno, 10147 - Prado, Belo Horizonte - MG, 30110-072",
-            "imagem": "posto4.png",
+            "imagem": "imgs/posto4.jpeg",
             "informacoesAdicionais": {
                 "tipoDePlug": "Tipo 2",
                 "potencia": "7.4 kW",
@@ -53,7 +53,7 @@
             "nome": "Klus",
             "coordenadas": [-43.939406, -19.934389],
             "endereco": "R. dos Aimorés, 647 - Funcionários, Belo Horizonte - MG, 30140-075",
-            "imagem": "posto5.png",
+            "imagem": "imgs/posto5.jpg",
             "informacoesAdicionais": {
                 "tipoDePlug": "Tipo 2",
                 "potencia": "7.3 kW",
@@ -65,7 +65,7 @@
             "nome": "Loja Elétrica Ltda",
             "coordenadas": [-43.936336, -19.951034],
             "endereco": "Av. Nossa Sra. do Carmo, 1202 - São Pedro, Belo Horizonte - MG, 30310-000",
-            "imagem": "posto6.png",
+            "imagem": "imgs/posto6.jpeg",
             "informacoesAdicionais": {
                 "tipoDePlug": "Tipo 2",
                 "potencia": "Indisponível",
@@ -77,7 +77,7 @@
             "nome": "Loja Elétrica Ltda",
             "coordenadas": [-43.964112, -19.957461],
             "endereco": "Av. Barão Homem de Melo, 3300 - Nova Granada, Belo Horizonte - MG, 30494-080",
-            "imagem": "posto7.png",
+            "imagem": "imgs/posto7.jpeg",
             "informacoesAdicionais": {
                 "tipoDePlug": "Tipo 2",
                 "potencia": "7.4 kW",
@@ -89,7 +89,7 @@
             "nome": "Nissan",
             "coordenadas": [-43.960714, -19.962761],
             "endereco": "Av. Barão Homem de Melo, 3400 - Nova Granada, Belo Horizonte - MG, 30494-270",
-            "imagem": "posto8.png",
+            "imagem": "imgs/posto8.JPG",
             "informacoesAdicionais": {
                 "tipoDePlug": "Tipo 2",
                 "potencia": "22 kW",
@@ -101,7 +101,7 @@
             "nome": "CVC Hiper Assai Belvedere",
             "coordenadas": [-43.941828, -19.961575],
             "endereco": "Rua Maria Luiza Santiago, 110 - Santa Lúcia, Belo Horizonte - MG, 30360-740",
-            "imagem": "posto9.png",
+            "imagem": "imgs/posto9.jpg",
             "informacoesAdicionais": {
                 "tipoDePlug": "Indisponível",
                 "potencia": "Indisponível",
@@ -113,7 +113,7 @@
             "nome": "Eletroposto Prime Veículos",
             "coordenadas": [-43.946762, -19.972153],
             "endereco": "Av. Raja Gabáglia, 4871 - Cidade Jardim, Belo Horizonte - MG, 30360-670",
-            "imagem": "posto10.png",
+            "imagem": "imgs/posto10.jpeg",
             "informacoesAdicionais": {
                 "tipoDePlug": "CSS e Tipo 2",
                 "potencia": "50 kW e 22 kW",
