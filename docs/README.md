@@ -10,7 +10,6 @@ Informações básicas do projeto.
   * [João Vitor de Alvarenga Alvares](https://github.com/joaovitoralvarenga)
   * [Lucca Sander Frisso](https://github.com/Lsanderf)
   * [Luciano Gomes Eudes](https://github.com/llucianoeudes)
-  * [Ernando Gabriel Antunes de Oliveira](https://github.com/ErnandoGA)
 
 A documentação do projeto é estruturada da seguinte forma:
 
