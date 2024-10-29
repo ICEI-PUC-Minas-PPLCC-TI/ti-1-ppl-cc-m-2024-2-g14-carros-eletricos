@@ -29,7 +29,6 @@ async function carregarPontosDeRecarga() {
                     <img src="${ponto.imagem}" alt="Imagem do local" style="width:100%; border-radius:8px;">
                     <p><strong>Tipo de Plug:</strong> ${ponto.informacoesAdicionais.tipoDePlug}</p>
                     <p><strong>Potência:</strong> ${ponto.informacoesAdicionais.potencia}</p>
-                    <p><strong>Preço por kWh:</strong> R$ ${ponto.informacoesAdicionais.precoPorKWh}</p>
                     <p><strong>Horário de Funcionamento:</strong> ${ponto.informacoesAdicionais.horarioFuncionamento}</p>
                     <p><strong>Favoritado:</strong> <span id="favoritado-${ponto.id}">${favoritos.includes(ponto.id) ? 'Sim' : 'Não'}</span></p>
                     <button class="favoritar-button" id="favoritar-button-${ponto.id}">
