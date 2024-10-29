@@ -68,4 +68,14 @@
 .input-field input:focus {
     outline: none;
 }
+#calculate {
+    background: linear-gradient(var(--linear-gradient));
+    border: none;
+    padding: 10px;
+    color:beige;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
