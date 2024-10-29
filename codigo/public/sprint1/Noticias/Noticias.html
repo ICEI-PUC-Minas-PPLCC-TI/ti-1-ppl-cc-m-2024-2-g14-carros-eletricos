@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias sobre Carros Elétricos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="Logo.png" alt="Notícias sobre Carros Elétricos" id="page-title">
+        <form class="search-form">
+            <input type="text" id="search-input" placeholder="Buscar..." aria-label="Buscar notícias">
+            <button type="submit">🔍</button>
+        </form>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <!-- Container para as notícias -->
+        <div class="news-container">
+            <h2>Notícias sobre Carros Elétricos</h2>
+            <div class="news-list">
+                <!-- As notícias serão injetadas aqui pelo JavaScript -->
+            </div>
+        </div>
+
+        <!-- Nova seção para as Top 10 mais lidas -->
+        <div class="top-news-container">
+            <h2>Top 10 Mais Lidas</h2>
+            <ul class="top-news-list" id="top-articles-list">
+                <!-- As top 10 mais lidas serão injetadas aqui pelo JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="News.js"></script>
+</body>
+</html>
