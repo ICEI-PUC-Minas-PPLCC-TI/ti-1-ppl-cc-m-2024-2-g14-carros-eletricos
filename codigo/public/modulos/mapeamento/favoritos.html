@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos de Recarga Favoritos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="favoritos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Início</a>
+            <a href="index.html">Mapa</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="#">Simulador</a>
+            <a href="#">Tabela</a>
+            <a href="#">Notícias</a>
+        </nav>
+    </header>
+    <h1>Pontos de Recarga Favoritos</h1>
+    <ul id="lista-favoritos"></ul>
+
+    <script>
+        let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+
+        async function carregarFavoritos() {
+            try {
+                const response = await fetch('pontos_de_recarga.json');
+                if (!response.ok) throw new Error('Erro ao carregar os dados dos pontos de recarga');
+
+                const data = await response.json();
+                const pontosDeRecarga = data.pontosDeRecarga;
+
+                const listaFavoritos = document.getElementById('lista-favoritos');
+                pontosDeRecarga.forEach(ponto => {
+                    if (favoritos.includes(ponto.id)) {
+                        const li = document.createElement('li');
+                        li.innerText = `${ponto.nome} - ${ponto.endereco}`;
+                        
+                        const favoritoIcon = document.createElement('i');
+                        favoritoIcon.className = 'fas fa-heart';
+                        favoritoIcon.style.color = 'red';
+
+                        const removerButton = document.createElement('button');
+                        removerButton.innerText = 'Remover';
+                        removerButton.onclick = () => {
+                            favoritos = favoritos.filter(id => id !== ponto.id);
+                            localStorage.setItem('favoritos', JSON.stringify(favoritos));
+                            li.remove();
+                        };
+
+                        li.appendChild(favoritoIcon);
+                        li.appendChild(removerButton);
+                        listaFavoritos.appendChild(li);
+                    }
+                });
+            } catch (error) {
+                console.error('Erro:', error);
+            }
+        }
+
+        carregarFavoritos();
+    </script>
+</body>
+</html>
