@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Viabilidade Econômica</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div id="titulo">
+            <h1>ChargeUp</h1>
+        </div>
+    
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Simulador Econômico</a></li>
+            <li><a href="#">Catálogo de Carros</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </header>
+
+    <main id="container">
+        <div id="simulador">
+            <h2>Calculadora de Economia</h2>
+            <h3>Uso do veículo</h3>
+
+            <div id="input_box">
+                <div class="input-field">
+                    <label for="distance">Distância percorrida POR ANO (km)*</label>
+                    <input type="number" id="distance">
+                </div>
+                <h3>Carro à Combustão</h3>
+
+
+
+            <div id="input_box">
+                <div class="input-field">
+                    <label for="value">Consumo médio (km / litro)</label>
+                    <input type="number" id="value">
+                </div>
+                <div class="input-field">
+                    <label for="price">Preço do combustível (R$ / litro)</label>
+                    <input type="number" id="price">
+                </div>
+                <h3>Carro Elétrico</h3>
+                <div class="input-field">
+                    <label for="consumption">Consumo médio (km / kWh)</label>
+                    <input type="number" id="consumption">
+                </div>
+                <div class="input-field">
+                    <label for="priceE">Preço da energia (R$ / kWh)</label>
+                    <input type="number" id="priceE">
+                </div>
+            </div>
+            
+            <div id="result ">
+                <h4>Resultado:</h4>
+                <span id="total">
+                    R$ 0,00
+                </span>
+            </div>
+
+            <button id="calculate">
+                Calcular
+            </button>
+        </div>
+    </main>
+</body>
+</html>
