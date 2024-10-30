@@ -28,7 +28,7 @@
       "marca": "Tesla",
       "modelo": "Model 3",
       "tipo": "Sedan elétrico",
-      "imagem": "imgs/Model333.jpg",
+      "imagem": "imgs/Tesla Model3333.jpg",
       "link_venda": "https://www.tesla.com/model3"
     },
     {
@@ -39,7 +39,7 @@
       "modelo": "Leaf",
       "tipo": "Hatch elétrico",
       "imagem": "imgs/NissanLeaf.jpg",
-      "link_venda": "https://www.nissan.com.br/veiculos/modelos/novo-leaf.html"
+      "link_venda": "imgs/nisan23.jpg"
     },
     {
       "nome": "Audi e-tron",
