@@ -11,18 +11,16 @@ let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
 
 async function carregarPontosDeRecarga() {
     try {
-        const response = await fetch('pontos_de_recarga.json');
+        const response = await fetch('http://localhost:3000/pontosDeRecarga');
         if (!response.ok) throw new Error('Erro ao carregar os dados dos pontos de recarga');
 
-        const data = await response.json();
-        const pontosDeRecarga = data.pontosDeRecarga;
-
+        const pontosDeRecarga = await response.json();
         pontosDeRecarga.forEach(ponto => {
             const marker = new mapboxgl.Marker()
                 .setLngLat(ponto.coordenadas)
                 .addTo(map);
 
-                const popupContent = `
+            const popupContent = `
                 <div class="mapboxgl-popup-content">
                     <h3>${ponto.nome}</h3>
                     <p><strong>Endereço:</strong> ${ponto.endereco}</p>
@@ -38,7 +36,6 @@ async function carregarPontosDeRecarga() {
             `;
 
             marker.getElement().addEventListener('click', () => {
-
                 const popup = new mapboxgl.Popup({ closeOnClick: false, draggable: true })
                     .setLngLat(ponto.coordenadas)
                     .setHTML(popupContent)
@@ -46,17 +43,14 @@ async function carregarPontosDeRecarga() {
 
                 const favoritarButton = document.getElementById(`favoritar-button-${ponto.id}`);
                 favoritarButton.onclick = () => {
-
                     const isFavorito = favoritos.includes(ponto.id);
-
                     if (isFavorito) {
                         favoritos = favoritos.filter(id => id !== ponto.id);
                     } else {
                         favoritos.push(ponto.id);
                     }
-
                     document.getElementById(`favoritado-${ponto.id}`).innerText = favoritos.includes(ponto.id) ? 'Sim' : 'Não';
-                    document.getElementById(`favorito-icon-${ponto.id}`).className = favoritos.includes(ponto.id) ? 'fas fa-heart' : 'far fa-heart'; // Atualiza o ícone
+                    document.getElementById(`favorito-icon-${ponto.id}`).className = favoritos.includes(ponto.id) ? 'fas fa-heart' : 'far fa-heart';
 
                     localStorage.setItem('favoritos', JSON.stringify(favoritos));
                 };
