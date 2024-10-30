@@ -109,7 +109,7 @@
       "modelo": "Song Plus",
       "tipo": "SUV elétrico",
       "imagem": "imgs/BYD-Song-Plus-GL.jpg",
-      "link_venda": "https://exemplo.com/songplus"
+      "link_venda": "https://www.byd.com/br/car/song-plus-dmi"
     },
     {
       "nome": "Fiat 500e",
@@ -119,7 +119,7 @@
       "modelo": "500e",
       "tipo": "Compacto elétrico",
       "imagem": "imgs/Fiat 500e.jpg",
-      "link_venda": "https://exemplo.com/500e"
+      "link_venda": "https://500e.fiat.com.br"
     },
     {
       "nome": "Mercedes-Benz EQC",
@@ -129,7 +129,7 @@
       "modelo": "EQC",
       "tipo": "SUV elétrico",
       "imagem": "imgs/Mercedes_EQC_Front.jpg",
-      "link_venda": "https://exemplo.com/eqc"
+      "link_venda": "https://www2.mercedes-benz.com.br"
     },
     {
       "nome": "Hyundai Kona Electric",
@@ -139,7 +139,7 @@
       "modelo": "Kona Electric",
       "tipo": "SUV elétrico",
       "imagem": "imgs/Hyundai-Kona-EV-.jpg",
-      "link_venda": "https://exemplo.com/kona"
+      "link_venda": "https://www.geracaohyundaihmb.com.br/novos/kona-electric-2024"
     },
     {
       "nome": "Mini Cooper SE",
@@ -149,7 +149,7 @@
       "modelo": "Cooper SE",
       "tipo": "Compacto elétrico",
       "imagem": "imgs/mini.jpg",
-      "link_venda": "https://exemplo.com/cooperse"
+      "link_venda": "https://www.mini.com.br/pt_BR/home.html"
     }
   ]
 }
