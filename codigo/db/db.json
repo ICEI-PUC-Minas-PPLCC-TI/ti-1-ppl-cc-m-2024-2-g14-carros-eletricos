@@ -367,17 +367,10 @@
       "savings": 280.81187707641203
     },
     {
-      "id": "67f8",
-      "distance": 6565,
-      "fuelCost": 505,
-      "electricCost": 505,
-      "savings": 0
-    },
-    {
-      "id": "50bb",
-      "distance": 6565,
-      "fuelCost": 505,
-      "electricCost": 505,
+      "id": "2b80",
+      "distance": 5454,
+      "fuelCost": 404,
+      "electricCost": 404,
       "savings": 0
     }
   ]
