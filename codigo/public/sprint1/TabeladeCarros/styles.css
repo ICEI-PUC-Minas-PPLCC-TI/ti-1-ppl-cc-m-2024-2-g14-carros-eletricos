@@ -1,3 +1,4 @@
+/* Estilo geral */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -49,6 +50,7 @@ h1 {
     color: #555;
 }
 
+/* Layout dos cards */
 .car-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -63,11 +65,18 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
+    transition: transform 0.3s ease;
+}
+
+.car:hover {
+    transform: translateY(-5px);
 }
 
 .car img {
     width: 100%;
     border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .car h2 {
@@ -81,12 +90,7 @@ h1 {
     margin: 5px 0;
 }
 
-.car a {
-    color: #4a90e2;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/* Botão de detalhes */
 .car .details-button {
     position: absolute;
     bottom: 20px;
@@ -101,8 +105,15 @@ h1 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.car .details-button:hover {
+    background-color: #4a4a8f;
+    transform: scale(1.2);
+}
+
+/* Animação de aparição dos cards */
 .car {
     opacity: 0;
     transform: translateY(20px);
@@ -118,20 +129,4 @@ h1 {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.details-button {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 18px;
-    color: white;
-    background-color: #4a4a8f;
-    border-radius: 50%;
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.details-button:hover {
-    background-color: #4a4a8f;
-    transform: scale(1.2);
 }
