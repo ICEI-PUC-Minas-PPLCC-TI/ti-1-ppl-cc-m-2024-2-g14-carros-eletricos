@@ -10,8 +10,7 @@
       "imagem": "imgs/seres3.jpg",
       "link_venda": "https://www.driveseres.com.br/seres-3-bev"
     },
-      {
-  
+    {
       "nome": "Chevrolet Bolt EV",
       "preco": "R$ 220.000",
       "ano": 2021,
@@ -19,7 +18,7 @@
       "modelo": "Bolt EV",
       "tipo": "Hatch elétrico",
       "imagem": "imgs/-Chevy-Bolt.jpg",
-      "link_venda": "https://www.chevrolet.com.br/eletrico/bolt-euv?ppc=GOOGLE_700000001285798_71700000119632164_58700008753929119_p80580761466_&gad_source=1&gclid=Cj0KCQjwj4K5BhDYARIsAD1Ly2q5_Ik92qWEbRDRm7sEFXHf5cED8xhkg7xm_6vHwcVLGjb2P1qBGsUaAkRYEALw_wcB&gclsrc=aw.ds"
+      "link_venda": "https://www.chevrolet.com.br/eletrico/bolt-euv"
     },
     {
       "nome": "Tesla Model 3",
@@ -59,7 +58,7 @@
       "modelo": "i3",
       "tipo": "Hatch elétrico",
       "imagem": "imgs/BMW-i3.jpg",
-      "link_venda": "https://eurovillebmw.com.br/bmw/ofertas?utm_source=ads&utm_medium=search&utm_campaign=i3&utm_id=ads&utm_term=Comprar%20bmw%20i3utm_content=01&utm_source=googleads&utm_medium=&utm_campaign=21324343415&utm_content=162275636606&utm_term=comprar%20bmw%20i3&gad_source=1&gclid=Cj0KCQjwj4K5BhDYARIsAD1Ly2okBHttYYMrHu8vxGaPg5pgB_RtNejXP7yJGK8xYq1Fcs2cn-Uh0joaAoGnEALw_wcB"
+      "link_venda": "https://eurovillebmw.com.br/bmw/ofertas"
     },
     {
       "nome": "Renault Zoe",
