@@ -1,10 +1,11 @@
 let carData = []; 
+
 async function fetchCarData() {
     try {
-        const response = await fetch('carros.json');
+        const response = await fetch('/carros'); // Alterado para usar o caminho relativo
         const data = await response.json();
         carData = data.carros; 
-        displayCars(carData); 
+        displayCars(carData);
     } catch (error) {
         console.error('Erro ao carregar os dados dos carros:', error);
     }
