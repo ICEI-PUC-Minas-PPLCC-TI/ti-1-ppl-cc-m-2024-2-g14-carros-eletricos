@@ -6,12 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const electricConsumption = parseFloat(document.getElementById("consumption").value);
         const electricPrice = parseFloat(document.getElementById("priceE").value);
 
-        console.log("Distância:", distance);
-        console.log("Consumo Combustível:", fuelConsumption);
-        console.log("Preço Combustível:", fuelPrice);
-        console.log("Consumo Elétrico:", electricConsumption);
-        console.log("Preço Energia:", electricPrice);
-
         if (isNaN(distance) || isNaN(fuelConsumption) || isNaN(fuelPrice) || isNaN(electricConsumption) || isNaN(electricPrice)) {
             alert("Por favor, preencha todos os campos corretamente.");
             return;
@@ -19,53 +13,66 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const fuelCost = (distance / fuelConsumption) * fuelPrice;
         const electricCost = (distance / electricConsumption) * electricPrice;
-        const savings = (fuelCost - electricCost);
-
-        console.log("Custo Combustível:", fuelCost);
-        console.log("Custo Elétrico:", electricCost);
-        console.log("Economia:", savings);
+        const savings = fuelCost - electricCost;
 
         document.getElementById("total").textContent = `Se economiza R$ ${savings.toFixed(2)} por ano ao comprar um carro elétrico`;
 
         saveData({ distance, fuelCost, electricCost, savings });
     }
 
-    function saveData(data) {
-        let savedData = JSON.parse(localStorage.getItem("savedResults")) || [];
-        savedData.push(data);
-        localStorage.setItem("savedResults", JSON.stringify(savedData));
-    }
+    async function saveData(data) {
+        try {
+            const response = await fetch("http://localhost:3000/cadastroCalculo", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
 
-    function loadData() {
-        const resultsDiv = document.getElementById("resultsDiv");
-        if (!resultsDiv) {
-            console.error("Elemento resultsDiv não encontrado.");
-            return;
+            if (!response.ok) throw new Error("Erro ao salvar os dados.");
+            console.log("Dados salvos com sucesso.");
+            loadData(); // Carregar os dados após salvar
+        } catch (error) {
+            console.error("Erro ao salvar os dados:", error);
         }
-
-        const savedData = JSON.parse(localStorage.getItem("savedResults")) || [];
-        resultsDiv.innerHTML = "";
-
-        savedData.forEach((data, index) => {
-            const resultItem = document.createElement("div");
-            resultItem.textContent = `Resultado ${index + 1}: Economia de R$ ${data.savings.toFixed(2)}`;
-
-            
-            const deleteButton = document.createElement("button");
-            deleteButton.textContent = "Excluir";
-            deleteButton.addEventListener("click", () => deleteData(index));
-
-            resultItem.appendChild(deleteButton);
-            resultsDiv.appendChild(resultItem);
-        });
     }
 
-    function deleteData(index) {
-        let savedData = JSON.parse(localStorage.getItem("savedResults")) || [];
-       
-        savedData.splice(index, 1);
-        localStorage.setItem("savedResults", JSON.stringify(savedData));
-        loadData();
+    async function loadData() {
+        const resultsDiv = document.getElementById("resultsDiv");
+        resultsDiv.innerHTML = ""; // Limpa resultados antigos
+
+        try {
+            const response = await fetch("http://localhost:3000/cadastroCalculo");
+            if (!response.ok) throw new Error("Erro ao carregar os dados.");
+
+            const savedData = await response.json();
+            savedData.forEach((data, index) => {
+                const resultItem = document.createElement("div");
+                resultItem.textContent = `Resultado ${index + 1}: Economia de R$ ${data.savings.toFixed(2)}`;
+
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "Excluir";
+                deleteButton.addEventListener("click", () => deleteData(data.id));
+
+                resultItem.appendChild(deleteButton);
+                resultsDiv.appendChild(resultItem);
+            });
+        } catch (error) {
+            console.error("Erro ao carregar os dados:", error);
+            resultsDiv.innerHTML = "<p>Erro ao carregar os dados. Verifique se o servidor está rodando.</p>";
+        }
+    }
+
+    async function deleteData(id) {
+        try {
+            await fetch(`http://localhost:3000/cadastroCalculo/${id}`, {
+                method: "DELETE"
+            });
+            loadData(); // Atualiza a lista de resultados
+        } catch (error) {
+            console.error("Erro ao excluir os dados:", error);
+        }
     }
 
     document.getElementById("calculate").addEventListener("click", calculate);
