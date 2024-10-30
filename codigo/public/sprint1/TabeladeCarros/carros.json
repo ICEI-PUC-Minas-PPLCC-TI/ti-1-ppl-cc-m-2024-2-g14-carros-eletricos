@@ -59,7 +59,7 @@
       "modelo": "i3",
       "tipo": "Hatch elétrico",
       "imagem": "imgs/BMW-i3.jpg",
-      "link_venda": "https://exemplo.com/i3"
+      "link_venda": "https://eurovillebmw.com.br/bmw/ofertas?utm_source=ads&utm_medium=search&utm_campaign=i3&utm_id=ads&utm_term=Comprar%20bmw%20i3utm_content=01&utm_source=googleads&utm_medium=&utm_campaign=21324343415&utm_content=162275636606&utm_term=comprar%20bmw%20i3&gad_source=1&gclid=Cj0KCQjwj4K5BhDYARIsAD1Ly2okBHttYYMrHu8vxGaPg5pgB_RtNejXP7yJGK8xYq1Fcs2cn-Uh0joaAoGnEALw_wcB"
     },
     {
       "nome": "Renault Zoe",
@@ -69,7 +69,7 @@
       "modelo": "Zoe",
       "tipo": "Hatch elétrico",
       "imagem": "imgs/renault-zoe.jpg",
-      "link_venda": "https://exemplo.com/zoe"
+      "link_venda": "https://www.renault.com.br/manuais/zoe.html"
     },
     {
       "nome": "Volkswagen ID.4",
@@ -79,7 +79,7 @@
       "modelo": "ID.4",
       "tipo": "SUV elétrico",
       "imagem": "imgs/Volkswagen ID.44.jpg",
-      "link_venda": "https://exemplo.com/id4"
+      "link_venda": "https://www.vw.com.br/pt/carros/ID4.html"
     },
     {
       "nome": "Jaguar I-PACE",
@@ -89,7 +89,7 @@
       "modelo": "I-PACE",
       "tipo": "SUV elétrico",
       "imagem": "imgs/Jaguar I-PACE.jpg",
-      "link_venda": "https://exemplo.com/ipace"
+      "link_venda": "https://www.jaguarbrasil.com.br/jaguar-range/i-pace/index.html"
     },
     {
       "nome": "Porsche Taycan",
@@ -99,7 +99,7 @@
       "modelo": "Taycan",
       "tipo": "Sedan elétrico",
       "imagem": "imgs/taycan.jpg",
-      "link_venda": "https://exemplo.com/taycan"
+      "link_venda": "https://www.porsche.com/brazil/pt/models/taycan/"
     },
     {
       "nome": "BYD Song Plus",
