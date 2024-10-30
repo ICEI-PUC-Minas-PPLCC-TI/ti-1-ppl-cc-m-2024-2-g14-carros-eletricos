@@ -105,7 +105,7 @@ header {
 }
 .menu-button {
     padding: 0.5rem 1rem;
-    background-color: #00a8cc;
+    background-color: rgb(86, 51, 209);
     color: white;
     border: none;
     border-radius: 4px;
