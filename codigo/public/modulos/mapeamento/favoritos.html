@@ -25,11 +25,10 @@
 
         async function carregarFavoritos() {
             try {
-                const response = await fetch('pontos_de_recarga.json');
+                const response = await fetch('http://localhost:3000/pontosDeRecarga');
                 if (!response.ok) throw new Error('Erro ao carregar os dados dos pontos de recarga');
 
-                const data = await response.json();
-                const pontosDeRecarga = data.pontosDeRecarga;
+                const pontosDeRecarga = await response.json();
 
                 const listaFavoritos = document.getElementById('lista-favoritos');
                 pontosDeRecarga.forEach(ponto => {
@@ -44,6 +43,7 @@
                         const removerButton = document.createElement('button');
                         removerButton.innerText = 'Remover';
                         removerButton.onclick = () => {
+                            // Remove o ponto dos favoritos
                             favoritos = favoritos.filter(id => id !== ponto.id);
                             localStorage.setItem('favoritos', JSON.stringify(favoritos));
                             li.remove();
