@@ -1,11 +1,10 @@
-let carData = []; // Variável para armazenar os dados dos carros
-
+let carData = []; 
 async function fetchCarData() {
     try {
         const response = await fetch('carros.json');
         const data = await response.json();
-        carData = data.carros; // Armazena os dados dos carros na variável
-        displayCars(carData); // Exibe todos os carros inicialmente
+        carData = data.carros; 
+        displayCars(carData); 
     } catch (error) {
         console.error('Erro ao carregar os dados dos carros:', error);
     }
@@ -39,7 +38,7 @@ function searchCar() {
         car.marca.toLowerCase().includes(searchInput) ||
         car.ano.toString().includes(searchInput)
     );
-    displayCars(filteredCars); // Exibe os carros filtrados
+    displayCars(filteredCars); 
 }
 
 document.getElementById('searchInput').addEventListener('input', searchCar);
