@@ -7,7 +7,7 @@
       "marca": "Seres",
       "modelo": "Seres 3",
       "tipo": "SUV elétrico",
-      "imagem": "https://exemplo.com/imagens/seres3.jpg",
+      "imagem": "imgs/seres3.jpg",
       "link_venda": "https://www.driveseres.com.br/seres-3-bev"
     },
     {
@@ -17,7 +17,7 @@
       "marca": "Chevrolet",
       "modelo": "Bolt EV",
       "tipo": "Hatch elétrico",
-      "imagem": "https://exemplo.com/imagens/chevrolet-bolt-ev.jpg",
+      "imagem": "imgs/-Chevy-Bolt.jpg",
       "link_venda": "https://exemplo.com/bolt"
     },
     {
@@ -27,7 +27,7 @@
       "marca": "Tesla",
       "modelo": "Model 3",
       "tipo": "Sedan elétrico",
-      "imagem": "https://exemplo.com/imagens/tesla-model-3.jpg",
+      "imagem": "imgs/Model333.jpg",
       "link_venda": "https://exemplo.com/model3"
     },
     {
@@ -37,7 +37,7 @@
       "marca": "Nissan",
       "modelo": "Leaf",
       "tipo": "Hatch elétrico",
-      "imagem": "https://exemplo.com/imagens/nissan-leaf.jpg",
+      "imagem": "imgs/NissanLeaf.jpg",
       "link_venda": "https://exemplo.com/leaf"
     },
     {
@@ -47,7 +47,7 @@
       "marca": "Audi",
       "modelo": "e-tron",
       "tipo": "SUV elétrico",
-      "imagem": "https://exemplo.com/imagens/audi-etron.jpg",
+      "imagem": "imgs/Audi e-tron.jpg",
       "link_venda": "https://exemplo.com/etron"
     },
     {
@@ -57,7 +57,7 @@
       "marca": "BMW",
       "modelo": "i3",
       "tipo": "Hatch elétrico",
-      "imagem": "https://exemplo.com/imagens/bmw-i3.jpg",
+      "imagem": "imgs/BMW-i3.jpg",
       "link_venda": "https://exemplo.com/i3"
     },
     {
@@ -67,7 +67,7 @@
       "marca": "Renault",
       "modelo": "Zoe",
       "tipo": "Hatch elétrico",
-      "imagem": "https://exemplo.com/imagens/renault-zoe.jpg",
+      "imagem": "imgs/renault-zoe.jpg",
       "link_venda": "https://exemplo.com/zoe"
     },
     {
@@ -77,7 +77,7 @@
       "marca": "Volkswagen",
       "modelo": "ID.4",
       "tipo": "SUV elétrico",
-      "imagem": "https://exemplo.com/imagens/volkswagen-id4.jpg",
+      "imagem": "imgs/Volkswagen ID.44.jpg",
       "link_venda": "https://exemplo.com/id4"
     },
     {
@@ -87,7 +87,7 @@
       "marca": "Jaguar",
       "modelo": "I-PACE",
       "tipo": "SUV elétrico",
-      "imagem": "https://exemplo.com/imagens/jaguar-ipace.jpg",
+      "imagem": "imgs/Jaguar I-PACE.jpg",
       "link_venda": "https://exemplo.com/ipace"
     },
     {
@@ -97,7 +97,7 @@
       "marca": "Porsche",
       "modelo": "Taycan",
       "tipo": "Sedan elétrico",
-      "imagem": "https://exemplo.com/imagens/porsche-taycan.jpg",
+      "imagem": "imgs/taycan.jpg",
       "link_venda": "https://exemplo.com/taycan"
     },
     {
@@ -107,7 +107,7 @@
       "marca": "BYD",
       "modelo": "Song Plus",
       "tipo": "SUV elétrico",
-      "imagem": "https://exemplo.com/imagens/byd-song-plus.jpg",
+      "imagem": "imgs/BYD-Song-Plus-GL.jpg",
       "link_venda": "https://exemplo.com/songplus"
     },
     {
@@ -117,7 +117,7 @@
       "marca": "Fiat",
       "modelo": "500e",
       "tipo": "Compacto elétrico",
-      "imagem": "https://exemplo.com/imagens/fiat-500e.jpg",
+      "imagem": "imgs/Fiat 500e.jpg",
       "link_venda": "https://exemplo.com/500e"
     },
     {
@@ -127,7 +127,7 @@
       "marca": "Mercedes-Benz",
       "modelo": "EQC",
       "tipo": "SUV elétrico",
-      "imagem": "https://exemplo.com/imagens/mercedes-eqc.jpg",
+      "imagem": "imgs/Mercedes_EQC_Front.jpg",
       "link_venda": "https://exemplo.com/eqc"
     },
     {
@@ -137,7 +137,7 @@
       "marca": "Hyundai",
       "modelo": "Kona Electric",
       "tipo": "SUV elétrico",
-      "imagem": "https://exemplo.com/imagens/hyundai-kona.jpg",
+      "imagem": "imgs/Hyundai-Kona-EV-.jpg",
       "link_venda": "https://exemplo.com/kona"
     },
     {
@@ -147,7 +147,7 @@
       "marca": "Mini",
       "modelo": "Cooper SE",
       "tipo": "Compacto elétrico",
-      "imagem": "https://exemplo.com/imagens/mini-cooper-se.jpg",
+      "imagem": "imgs/mini.jpg",
       "link_venda": "https://exemplo.com/cooperse"
     }
   ]
