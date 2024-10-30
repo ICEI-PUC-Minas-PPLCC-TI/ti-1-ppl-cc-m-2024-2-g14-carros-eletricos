@@ -3,7 +3,7 @@ const newsContainer = document.querySelector('.news-list');
 const topNewsContainer = document.querySelector('#top-articles-list');
 let allArticles = [];
 
-// Função para buscar as notícias principais da API
+
 async function fetchNews() {
     try {
         const response = await fetch(`https://newsapi.org/v2/everything?q=carros elétricos&apiKey=${API_KEY}`);
@@ -11,32 +11,32 @@ async function fetchNews() {
 
         const data = await response.json();
         allArticles = data.articles;
-        
-        // Exibe as notícias principais
-        displayNews(allArticles.slice(10)); 
+
+       
+        displayNews(allArticles.slice(10));
     } catch (error) {
         console.error(error);
         newsContainer.innerHTML = '<p>Erro ao carregar as notícias. Tente novamente mais tarde.</p>';
     }
 }
 
-// Função para carregar as top 10 notícias a partir do JSON
+
 async function fetchTopNewsFromJson() {
     try {
-        const response = await fetch('Not.json');
+        const response = await fetch('http://localhost:3000/topNews');
         if (!response.ok) throw new Error('Erro ao carregar as top notícias');
 
         const data = await response.json();
-        displayTopNews(data.topNews);
+        displayTopNews(data); 
     } catch (error) {
         console.error(error);
         topNewsContainer.innerHTML = '<p>Erro ao carregar as top notícias.</p>';
     }
 }
 
-// Função para exibir as notícias principais
+
 function displayNews(articles) {
-    newsContainer.innerHTML = ''; 
+    newsContainer.innerHTML = '';
 
     articles.forEach(article => {
         if (article.urlToImage && article.title) {
@@ -72,15 +72,18 @@ function displayNews(articles) {
     });
 }
 
-// Função para exibir o Top 10 a partir do JSON
-function displayTopNews(articles) {
-    topNewsContainer.innerHTML = ''; 
 
-    articles.forEach(article => {
+function displayTopNews(articles) {
+    topNewsContainer.innerHTML = '';
+
+   
+    const topThreeArticles = articles.slice(0, 3);
+    
+    topThreeArticles.forEach(article => {
         const topNewsItem = document.createElement('li');
         const topNewsLink = document.createElement('a');
 
-        topNewsLink.href = article.url;
+        topNewsLink.href = article.url; 
         topNewsLink.target = '_blank';
         topNewsLink.textContent = article.title;
         topNewsLink.classList.add('top-news-link');
@@ -90,6 +93,6 @@ function displayTopNews(articles) {
     });
 }
 
-// Carrega as notícias e as top 10
+
 fetchNews();
 fetchTopNewsFromJson();
