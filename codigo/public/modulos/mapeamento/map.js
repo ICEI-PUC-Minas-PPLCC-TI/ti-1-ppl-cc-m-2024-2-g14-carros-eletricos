@@ -39,7 +39,7 @@ async function carregarPontosDeRecarga() {
 
             marker.getElement().addEventListener('click', () => {
 
-                const popup = new mapboxgl.Popup({ closeOnClick: false })
+                const popup = new mapboxgl.Popup({ closeOnClick: false, draggable: true })
                     .setLngLat(ponto.coordenadas)
                     .setHTML(popupContent)
                     .addTo(map);
