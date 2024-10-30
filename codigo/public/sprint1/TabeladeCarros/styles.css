@@ -102,3 +102,36 @@ h1 {
     justify-content: center;
     text-decoration: none;
 }
+.car {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de hover para o botão de detalhes */
+.details-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.2);
+}
