@@ -309,5 +309,20 @@
                 "horarioFuncionamento": "08:00–18:00"
             }
         }
+    ],
+    "topNews": [
+        {
+            "title": "O Kia EV9 foi eleito o melhor carro elétrico de 2024 pela World Car Awards, principal premiação mundial de carro do ano.",
+            "url": "https://quatrorodas.abril.com.br/noticias/kia-ev9-e-eleito-o-melhor-carro-do-mundo-em-2024-pela-world-car-awards#:~:text=Desbancando%20concorrentes%20como%20BYD%20Seal,melhor%20carro%20el%C3%A9trico%20de%202024&text=A%20World%20Car%20Awards%2C%20principal,Carro%20Mundial%20do%20Ano%202024."
+        },
+        {
+            "title": "No Brasil, a venda de carros elétricos cresceu 146% no primeiro semestre de 2024, totalizando 79.304 unidades.",
+            "url": "https://www.enelx.com/br/pt/conteudos/venda-de-carros-eletricos-no-brasil-cresce-146-no-1-semestre-de-2024#:~:text=Segundo%20um%20relat%C3%B3rio%20da%20Associa%C3%A7%C3%A3o,em%20todo%20o%20territ%C3%B3rio%20nacional."
+        },
+        {
+            "title": "A frota de veículos elétricos no Brasil deve chegar a 11 milhões em 2040, representando mais de 20% da frota circulante atual.",
+            "url": "https://frotas.localiza.com/blog/frota-de-veiculos-eletricos#:~:text=Qual%20a%20previs%C3%A3o%20de%20crescimento,20%25%20da%20frota%20circulante%20atual."
+        }
+       
     ]
 }
