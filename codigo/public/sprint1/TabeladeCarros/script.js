@@ -1,8 +1,11 @@
+let carData = []; // Variável para armazenar os dados dos carros
+
 async function fetchCarData() {
     try {
         const response = await fetch('carros.json');
         const data = await response.json();
-        displayCars(data.carros);
+        carData = data.carros; // Armazena os dados dos carros na variável
+        displayCars(carData); // Exibe todos os carros inicialmente
     } catch (error) {
         console.error('Erro ao carregar os dados dos carros:', error);
     }
@@ -31,14 +34,12 @@ function displayCars(cars) {
 
 function searchCar() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
-    fetchCarData().then(data => {
-        const filteredCars = data.filter(car =>
-            car.nome.toLowerCase().includes(searchInput) ||
-            car.marca.toLowerCase().includes(searchInput) ||
-            car.ano.toString().includes(searchInput)
-        );
-        displayCars(filteredCars);
-    });
+    const filteredCars = carData.filter(car =>
+        car.nome.toLowerCase().includes(searchInput) ||
+        car.marca.toLowerCase().includes(searchInput) ||
+        car.ano.toString().includes(searchInput)
+    );
+    displayCars(filteredCars); // Exibe os carros filtrados
 }
 
 document.getElementById('searchInput').addEventListener('input', searchCar);
