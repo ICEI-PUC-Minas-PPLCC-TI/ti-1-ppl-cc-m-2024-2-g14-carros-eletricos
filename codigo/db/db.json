@@ -174,5 +174,29 @@
             "link_venda": "https://www.mini.com.br/pt_BR/home.html"
           }
         ]
+
+        {
+          "cadastro-calculo": [
+      
+              
+                {
+                    "id": 1,
+                    "distancia": 15000,
+                    "consumoCombustao": 10,
+                    "precoCombustivel": 5.50,
+                    "consumoEletrico": 6,
+                    "precoEnergia": 0.60,
+                    "custoCombustao": 825.00,
+                    "custoEletrico": 1500.00,
+                    "economia": -675.00
+                },
+            
+            ]
+            
+            }
+            
+        
+        
+      
       }
       
