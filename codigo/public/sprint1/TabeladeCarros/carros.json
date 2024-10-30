@@ -10,7 +10,8 @@
       "imagem": "imgs/seres3.jpg",
       "link_venda": "https://www.driveseres.com.br/seres-3-bev"
     },
-    {
+      {
+  
       "nome": "Chevrolet Bolt EV",
       "preco": "R$ 220.000",
       "ano": 2021,
@@ -18,7 +19,7 @@
       "modelo": "Bolt EV",
       "tipo": "Hatch elétrico",
       "imagem": "imgs/-Chevy-Bolt.jpg",
-      "link_venda": "https://exemplo.com/bolt"
+      "link_venda": "https://www.chevrolet.com.br/eletrico/bolt-euv?ppc=GOOGLE_700000001285798_71700000119632164_58700008753929119_p80580761466_&gad_source=1&gclid=Cj0KCQjwj4K5BhDYARIsAD1Ly2q5_Ik92qWEbRDRm7sEFXHf5cED8xhkg7xm_6vHwcVLGjb2P1qBGsUaAkRYEALw_wcB&gclsrc=aw.ds"
     },
     {
       "nome": "Tesla Model 3",
@@ -28,7 +29,7 @@
       "modelo": "Model 3",
       "tipo": "Sedan elétrico",
       "imagem": "imgs/Model333.jpg",
-      "link_venda": "https://exemplo.com/model3"
+      "link_venda": "https://www.tesla.com/model3"
     },
     {
       "nome": "Nissan Leaf",
@@ -38,7 +39,7 @@
       "modelo": "Leaf",
       "tipo": "Hatch elétrico",
       "imagem": "imgs/NissanLeaf.jpg",
-      "link_venda": "https://exemplo.com/leaf"
+      "link_venda": "https://www.nissan.com.br/veiculos/modelos/novo-leaf.html"
     },
     {
       "nome": "Audi e-tron",
@@ -48,7 +49,7 @@
       "modelo": "e-tron",
       "tipo": "SUV elétrico",
       "imagem": "imgs/Audi e-tron.jpg",
-      "link_venda": "https://exemplo.com/etron"
+      "link_venda": "https://www.audi.com.br/br/web/pt/models/e-tron-gt/audi-rs-e-tron-gt.html"
     },
     {
       "nome": "BMW i3",
