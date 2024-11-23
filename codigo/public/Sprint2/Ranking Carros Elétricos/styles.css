@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; 
-    color: #E0E0E0; 
+    background-color: #121212;
+    color: #E0E0E0;
     margin: 0;
     padding: 20px;
 }
@@ -10,11 +10,11 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    background: #1F1F1F; 
+    background: #1F1F1F;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    height: 80vh; 
+    height: 80vh;
     overflow-y: auto;
 }
 
@@ -22,7 +22,7 @@ h1 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #FFF; 
+    color: #FFF;
 }
 
 .car-item {
@@ -52,7 +52,7 @@ h1 {
     display: none;
     position: absolute;
     top: 0;
-    left: 130px; /* Posiciona à direita da imagem */
+    left: 150px; /* Ajusta para a imagem do carro */
     background: #333;
     padding: 15px;
     border: 1px solid #444;
@@ -61,16 +61,16 @@ h1 {
     z-index: 10;
     width: 250px;
     color: #FFF;
-    margin-top: 0; /* Não move outros elementos */
-    opacity: 0; /* Inicialmente invisível */
-    pointer-events: none; /* Impede interação quando invisível */
-    transition: opacity 0.3s ease-in-out; /* Transição suave */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transição suave */
 }
 
 .car-item:hover .car-details {
     display: block;
-    opacity: 1; /* Torna visível */
-    pointer-events: auto; /* Permite interação quando visível */
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(10px); /* Pequeno movimento para tornar o hover mais suave */
 }
 
 .car-details::after {
@@ -83,7 +83,7 @@ h1 {
     border-left: 10px solid #333;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    transform: translateY(-50%); /* Alinha a seta verticalmente */
+    transform: translateY(-50%);
 }
 
 .car-details p {

@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const rankingContainer = document.getElementById("ranking");
 
-    fetch("dados.json")
+    // Carrega o arquivo db.json
+    fetch("'http://localhost:3000/Rankings'")
         .then((response) => response.json())
-        .then((carros) => {
+        .then((data) => {
+            // Acessando os carros dentro da chave "Rankings"
+            const carros = data.Rankings;
+
             carros.forEach((carro) => {
+                // Cria o elemento para cada carro
                 const carItem = document.createElement("div");
                 carItem.classList.add("car-item");
                 carItem.innerHTML = `
@@ -18,18 +23,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 `;
 
-                // Adiciona evento de mouseover para mostrar detalhes
+                // Evento para mostrar os detalhes ao passar o mouse
                 carItem.addEventListener("mouseover", () => {
                     const details = carItem.querySelector(".car-details");
                     details.style.display = "block";
+                    details.style.opacity = "1"; // Torna visível
                 });
 
-                // Adiciona evento de mouseout para esconder detalhes
+                // Evento para esconder os detalhes ao tirar o mouse
                 carItem.addEventListener("mouseout", () => {
                     const details = carItem.querySelector(".car-details");
                     details.style.display = "none";
+                    details.style.opacity = "0"; // Torna invisível novamente
                 });
 
+                // Adiciona o item do carro ao container
                 rankingContainer.appendChild(carItem);
             });
         })
