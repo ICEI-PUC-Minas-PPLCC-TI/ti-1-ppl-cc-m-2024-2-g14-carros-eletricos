@@ -116,19 +116,34 @@ header {
     margin-bottom: 1rem;
     color: var(--text-color);
     
-    
 }
 #Recarga {
     color: #ffffff;
     text-align: center;
 }
 
+#Recarga::before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 200px;
+    background: linear-gradient(var(--linear-gradient));
+    margin-top:35px;
+}
+
+
 #lista-pontos {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
 }
 
 #lista-pontos li {
     padding: 10px;
+    justify-content: space-between;
+  
     background-color: #fff;
     margin: 10px 0;
     border-radius: 8px;
@@ -138,4 +153,5 @@ header {
 #lista-pontos li:hover {
     background-color: #d1e7dd;
     cursor:pointer;
+    
 }
