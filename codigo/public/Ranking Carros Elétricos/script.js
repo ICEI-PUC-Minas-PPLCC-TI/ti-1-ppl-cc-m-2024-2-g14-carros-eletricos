@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const carros = data.Rankings;
 
             carros.forEach((carro) => {
-                // Cria o elemento para cada carro 
+                // Cria o elemento para cada carro
                 const carItem = document.createElement("div");
                 carItem.classList.add("car-item");
                 carItem.innerHTML = `
