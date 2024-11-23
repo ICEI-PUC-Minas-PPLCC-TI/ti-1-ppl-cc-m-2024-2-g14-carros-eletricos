@@ -83,8 +83,52 @@ header {
 
 .custom-marker {
     border-radius: 50%;
-    border: 2px solid gray;
-
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+
+}
+
+.siderbar {
+    width: 70%;  
+    background-color: #ffffff;
+    padding: 2rem;
+    overflow-y: auto;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 350px;
+    margin-right: 20px;
+
+ 
+       
+    
+}
+
+.sidebar h2 {
+    margin-bottom: 1rem;
+    
+}
+
+#lista-pontos {
+    list-style: none;
+}
+
+#lista-pontos li {
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+}
+
+#lista-pontos li:hover {
+    background-color: #d1e7dd;
+    cursor:pointer;
 }

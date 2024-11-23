@@ -7,10 +7,11 @@ navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
 function successLocation(position) {
     const { latitude, longitude } = position.coords;
     setupMap([longitude, latitude]);
+    carregarPontosDeRecarga(latitude, longitude);
 }
 
 function errorLocation() {
-    setupMap([-74.006, 40.7128]); // Localização padrão (Nova York)
+    setupMap([-74.006, 40.7128]);
 }
 
 let map;
@@ -32,8 +33,6 @@ function setupMap(center) {
         profile: 'mapbox/cycling'
     });
     map.addControl(directions, 'top-left');
-
-    carregarPontosDeRecarga();
 }
 
 async function carregarPontosDeRecarga() {
@@ -42,20 +41,19 @@ async function carregarPontosDeRecarga() {
         if (!response.ok) throw new Error('Erro ao carregar os dados dos pontos de recarga');
 
         const pontosDeRecarga = await response.json();
+
+        // Mostrar todos os pontos no mapa
         pontosDeRecarga.forEach(ponto => {
-            // Criar elemento personalizado para o marcador
             const el = document.createElement('div');
             el.className = 'custom-marker';
-            el.style.backgroundImage = `url('assets/images/Icone.png')`; // Caminho para a imagem do ícone
-            el.style.width = '40px'; // Tamanho do ícone
-            el.style.height = '40px'; // Tamanho do ícone
+            el.style.backgroundImage = `url('assets/images/Icone.png')`; 
+            el.style.width = '40px'; 
+            el.style.height = '40px';
 
-            // Criar marcador com o ícone personalizado
             const marker = new mapboxgl.Marker(el)
                 .setLngLat(ponto.coordenadas)
                 .addTo(map);
 
-            // Criar o conteúdo do popup
             const popupContent = `
                 <div class="mapboxgl-popup-content">
                     <h3>${ponto.nome}</h3>
@@ -66,12 +64,34 @@ async function carregarPontosDeRecarga() {
                     <p><strong>Horário de Funcionamento:</strong> ${ponto.informacoesAdicionais.horarioFuncionamento}</p>
                 </div>
             `;
-
             const popup = new mapboxgl.Popup({ closeOnClick: true, draggable: true })
                 .setHTML(popupContent);
 
             marker.setPopup(popup);
         });
+
+        // Selecionar três pontos aleatórios
+        const pontosAleatorios = [];
+        while (pontosAleatorios.length < 3) {
+            const indexAleatorio = Math.floor(Math.random() * pontosDeRecarga.length);
+            if (!pontosAleatorios.includes(pontosDeRecarga[indexAleatorio])) {
+                pontosAleatorios.push(pontosDeRecarga[indexAleatorio]);
+            }
+        }
+
+        // Exibir três pontos aleatórios na tabela
+        const listaPontos = document.getElementById('lista-pontos');
+        listaPontos.innerHTML = '';
+
+        pontosAleatorios.forEach(ponto => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `${ponto.nome} - ${ponto.endereco}`;
+            listItem.onclick = () => {
+                map.flyTo({ center: ponto.coordenadas, zoom: 15 });
+            };
+            listaPontos.appendChild(listItem);
+        });
+
     } catch (error) {
         console.error('Erro ao carregar pontos de recarga:', error);
         alert('Não foi possível carregar os pontos de recarga.');
