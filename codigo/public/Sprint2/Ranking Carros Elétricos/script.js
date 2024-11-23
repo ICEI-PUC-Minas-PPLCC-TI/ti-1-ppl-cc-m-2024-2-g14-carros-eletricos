@@ -5,11 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch('http://localhost:3000/Rankings')
         .then((response) => response.json())
         .then((data) => {
-            // Acessando os carros dentro da chave "Rankings"
-            const carros = data.Rankings;
+            console.log(data); // Log dos dados recebidos
+
+            // Verifique se "data" é um array ou se contém a chave "Rankings"
+            if (!data || !Array.isArray(data)) {
+                console.error("Dados inválidos ou formato incorreto:", data);
+                return;
+            }
+
+            // Acessando os carros diretamente se data já for um array
+            const carros = data;
 
             carros.forEach((carro) => {
-                // Cria o elemento para cada carro 
+                // Cria o elemento para cada carro
                 const carItem = document.createElement("div");
                 carItem.classList.add("car-item");
                 carItem.innerHTML = `
@@ -19,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p><strong>Ano:</strong> ${carro.ano}</p>
                         <p><strong>Tipo:</strong> ${carro.tipo}</p>
                         <p><strong>Preço:</strong> ${carro.preco}</p>
-                        <p><strong>Quantidade Vendida:</strong> ${carro.quantidade}</p>
+                        <p><strong>Unidades Vendidas:</strong> ${carro.quantidade}</p>
                     </div>
                 `;
 
@@ -41,5 +49,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 rankingContainer.appendChild(carItem);
             });
         })
-        .catch((error) => console.error("Erro ao carregar os dados:", error));
+        .catch((error) => console.error("Erro ao carregar os dados:", error));  // Exibe erro no console se houver
 });
