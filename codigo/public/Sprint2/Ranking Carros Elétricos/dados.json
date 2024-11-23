@@ -1,0 +1,47 @@
+[
+    {
+        "posicao": 1,
+        "modelo": "BYD Dolphin",
+        "ano": 2024,
+        "tipo": "Hatch",
+        "preco": "R$ 140.000",
+        "quantidade": 8500,
+        "imagem": "BYD Dolphin.webp"
+    },
+    {
+        "posicao": 2,
+        "modelo": "BYD Song Plus",
+        "ano": 2024,
+        "tipo": "SUV",
+        "preco": "R$ 220.000",
+        "quantidade": 7200,
+        "imagem": "BYD Song.webp"
+    },
+    {
+        "posicao": 3,
+        "modelo": "Tesla Model 3",
+        "ano": 2024,
+        "tipo": "Sedan",
+        "preco": "R$ 250.000",
+        "quantidade": 6500,
+        "imagem": "Tesla Model 3.png"
+    },
+    {
+        "posicao": 4,
+        "modelo": "Haval H6 HEV",
+        "ano": 2024,
+        "tipo": "SUV",
+        "preco": "R$ 214.000",
+        "quantidade": 6000,
+        "imagem": "Haval H6.png"
+    },
+    {
+        "posicao": 5,
+        "modelo": "Toyota Corolla Cross Hybrid",
+        "ano": 2024,
+        "tipo": "SUV",
+        "preco": "R$ 210.990",
+        "quantidade": 5900,
+        "imagem": "Corolla Cross.jpeg"
+    }
+]
