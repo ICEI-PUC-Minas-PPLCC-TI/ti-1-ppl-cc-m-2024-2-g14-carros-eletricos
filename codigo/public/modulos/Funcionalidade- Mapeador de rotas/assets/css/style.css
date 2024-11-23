@@ -2,6 +2,8 @@
 
 :root {
     --linear-gradient: 90deg, #00FA9A, #48D1CC, #191970;
+    --text-color: #ffff;
+    
 }
 
 * {
@@ -96,24 +98,29 @@ header {
 }
 
 .siderbar {
-    width: 70%;  
-    background-color: #ffffff;
+    width: 30%;  
+    background-color: rgb(24, 32, 32);
     padding: 2rem;
     overflow-y: auto;
-    height: 50%;
+    height: 60%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 350px;
-    margin-right: 20px;
+    margin-top: 260px;
+    position: absolute;
+    left:12%
 
- 
-       
-    
+
 }
 
 .sidebar h2 {
     margin-bottom: 1rem;
+    color: var(--text-color);
     
+    
+}
+#Recarga {
+    color: #ffffff;
+    text-align: center;
 }
 
 #lista-pontos {
