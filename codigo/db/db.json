@@ -1,14 +1,14 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "login": "admin",
       "senha": "123",
       "nome": "Administrador do Sistema",
       "email": "admin@abc.com"
     },
     {
-      "id": 2,
+      "id": "2",
       "login": "user",
       "senha": "123",
       "nome": "Usuario Comum",
@@ -19,7 +19,359 @@
       "senha": "123",
       "nome": "Rommel",
       "email": "rommel@gmail.com",
-      "id": 3
+      "id": "3"
+    }
+  ],
+  "carros": [
+    {
+      "nome": "Seres 3",
+      "preco": "R$ 200.000",
+      "ano": 2020,
+      "marca": "Seres",
+      "modelo": "Seres 3",
+      "tipo": "SUV elétrico",
+      "imagem": "imgs/seres3.jpg",
+      "link_venda": "https://www.driveseres.com.br/seres-3-bev",
+      "id": "1e93"
+    },
+    {
+      "nome": "Chevrolet Bolt EV",
+      "preco": "R$ 220.000",
+      "ano": 2021,
+      "marca": "Chevrolet",
+      "modelo": "Bolt EV",
+      "tipo": "Hatch elétrico",
+      "imagem": "imgs/-Chevy-Bolt.jpg",
+      "link_venda": "https://www.chevrolet.com.br/eletrico/bolt-euv",
+      "id": "a926"
+    },
+    {
+      "nome": "Tesla Model 3",
+      "preco": "R$ 280.000",
+      "ano": 2022,
+      "marca": "Tesla",
+      "modelo": "Model 3",
+      "tipo": "Sedan elétrico",
+      "imagem": "imgs/Tesla Model3333.jpg",
+      "link_venda": "https://www.tesla.com/model3",
+      "id": "5fe5"
+    },
+    {
+      "nome": "Nissan Leaf",
+      "preco": "R$ 190.000",
+      "ano": 2021,
+      "marca": "Nissan",
+      "modelo": "Leaf",
+      "tipo": "Hatch elétrico",
+      "imagem": "imgs/NissanLeaf.jpg",
+      "link_venda": "imgs/nisan23.jpg",
+      "id": "d4b1"
+    },
+    {
+      "nome": "Audi e-tron",
+      "preco": "R$ 500.000",
+      "ano": 2022,
+      "marca": "Audi",
+      "modelo": "e-tron",
+      "tipo": "SUV elétrico",
+      "imagem": "imgs/Audi e-tron.jpg",
+      "link_venda": "https://www.audi.com.br/br/web/pt/models/e-tron-gt/audi-rs-e-tron-gt.html",
+      "id": "0a99"
+    },
+    {
+      "nome": "BMW i3",
+      "preco": "R$ 230.000",
+      "ano": 2020,
+      "marca": "BMW",
+      "modelo": "i3",
+      "tipo": "Hatch elétrico",
+      "imagem": "imgs/BMW-i3.jpg",
+      "link_venda": "https://eurovillebmw.com.br/bmw/ofertas",
+      "id": "5df4"
+    },
+    {
+      "nome": "Renault Zoe",
+      "preco": "R$ 150.000",
+      "ano": 2021,
+      "marca": "Renault",
+      "modelo": "Zoe",
+      "tipo": "Hatch elétrico",
+      "imagem": "imgs/renault-zoe.jpg",
+      "link_venda": "https://www.renault.com.br/manuais/zoe.html",
+      "id": "14be"
+    },
+    {
+      "nome": "Volkswagen ID.4",
+      "preco": "R$ 250.000",
+      "ano": 2022,
+      "marca": "Volkswagen",
+      "modelo": "ID.4",
+      "tipo": "SUV elétrico",
+      "imagem": "imgs/Volkswagen ID.44.jpg",
+      "link_venda": "https://www.vw.com.br/pt/carros/ID4.html",
+      "id": "da72"
+    },
+    {
+      "nome": "Jaguar I-PACE",
+      "preco": "R$ 400.000",
+      "ano": 2022,
+      "marca": "Jaguar",
+      "modelo": "I-PACE",
+      "tipo": "SUV elétrico",
+      "imagem": "imgs/Jaguar I-PACE.jpg",
+      "link_venda": "https://www.jaguarbrasil.com.br/jaguar-range/i-pace/index.html",
+      "id": "65d1"
+    },
+    {
+      "nome": "Porsche Taycan",
+      "preco": "R$ 800.000",
+      "ano": 2022,
+      "marca": "Porsche",
+      "modelo": "Taycan",
+      "tipo": "Sedan elétrico",
+      "imagem": "imgs/taycan.jpg",
+      "link_venda": "https://www.porsche.com/brazil/pt/models/taycan/",
+      "id": "d15a"
+    },
+    {
+      "nome": "BYD Song Plus",
+      "preco": "R$ 210.000",
+      "ano": 2023,
+      "marca": "BYD",
+      "modelo": "Song Plus",
+      "tipo": "SUV elétrico",
+      "imagem": "imgs/BYD-Song-Plus-GL.jpg",
+      "link_venda": "https://www.byd.com/br/car/song-plus-dmi",
+      "id": "52dc"
+    },
+    {
+      "nome": "Fiat 500e",
+      "preco": "R$ 180.000",
+      "ano": 2022,
+      "marca": "Fiat",
+      "modelo": "500e",
+      "tipo": "Compacto elétrico",
+      "imagem": "imgs/Fiat 500e.jpg",
+      "link_venda": "https://500e.fiat.com.br",
+      "id": "8f38"
+    },
+    {
+      "nome": "Mercedes-Benz EQC",
+      "preco": "R$ 490.000",
+      "ano": 2022,
+      "marca": "Mercedes-Benz",
+      "modelo": "EQC",
+      "tipo": "SUV elétrico",
+      "imagem": "imgs/Mercedes_EQC_Front.jpg",
+      "link_venda": "https://www2.mercedes-benz.com.br",
+      "id": "5881"
+    },
+    {
+      "nome": "Hyundai Kona Electric",
+      "preco": "R$ 220.000",
+      "ano": 2021,
+      "marca": "Hyundai",
+      "modelo": "Kona Electric",
+      "tipo": "SUV elétrico",
+      "imagem": "imgs/Hyundai-Kona-EV-.jpg",
+      "link_venda": "https://www.geracaohyundaihmb.com.br/novos/kona-electric-2024",
+      "id": "4a6d"
+    },
+    {
+      "nome": "Mini Cooper SE",
+      "preco": "R$ 215.000",
+      "ano": 2021,
+      "marca": "Mini",
+      "modelo": "Cooper SE",
+      "tipo": "Compacto elétrico",
+      "imagem": "imgs/mini.jpg",
+      "link_venda": "https://www.mini.com.br/pt_BR/home.html",
+      "id": "884d"
+    }
+  ],
+  "pontosDeRecarga": [
+    {
+      "id": "1",
+      "nome": "Eletroposto Porto Seguro - Grecar Centro Automotivo",
+      "coordenadas": [
+        -43.978584,
+        -19.944773
+      ],
+      "endereco": "Av. Pres. Tancredo Neves, 3885 - Castelo, Belo Horizonte - MG, 31330-430",
+      "imagem": "imgs/posto1.jpeg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Tipo 2",
+        "potencia": "20 kW",
+        "horarioFuncionamento": "08:00–18:00"
+      }
+    },
+    {
+      "id": "2",
+      "nome": "Motel Dubai BH",
+      "coordenadas": [
+        -43.968183,
+        -19.918501
+      ],
+      "endereco": "Anel Rodoviário Celso Mello Azevedo, 14020 - Alto Caiçaras, Belo Horizonte - MG, 30750-260",
+      "imagem": "imgs/posto2.jpg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Indisponível",
+        "potencia": "Indisponível",
+        "horarioFuncionamento": "24 horas gratuito"
+      }
+    },
+    {
+      "id": "3",
+      "nome": "Loja Elétrica Ltda",
+      "coordenadas": [
+        -43.974538,
+        -19.921948
+      ],
+      "endereco": "Av. Dom Pedro II, 3703 - Alto Caiçaras, Belo Horizonte - MG, 30720-460",
+      "imagem": "imgs/posto3.jpeg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Indisponível",
+        "potencia": "Indisponível",
+        "horarioFuncionamento": "Indisponível"
+      }
+    },
+    {
+      "id": "4",
+      "nome": "Nissan",
+      "coordenadas": [
+        -43.960716,
+        -19.926143
+      ],
+      "endereco": "Av. do Contorno, 10147 - Prado, Belo Horizonte - MG, 30110-072",
+      "imagem": "imgs/posto4.jpeg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Tipo 2",
+        "potencia": "7.4 kW",
+        "horarioFuncionamento": "08:00–18:00"
+      }
+    },
+    {
+      "id": "5",
+      "nome": "Klus",
+      "coordenadas": [
+        -43.939406,
+        -19.934389
+      ],
+      "endereco": "R. dos Aimorés, 647 - Funcionários, Belo Horizonte - MG, 30140-075",
+      "imagem": "imgs/posto5.jpg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Tipo 2",
+        "potencia": "7.3 kW",
+        "horarioFuncionamento": "09:00–20:00"
+      }
+    },
+    {
+      "id": "6",
+      "nome": "Loja Elétrica Ltda",
+      "coordenadas": [
+        -43.936336,
+        -19.951034
+      ],
+      "endereco": "Av. Nossa Sra. do Carmo, 1202 - São Pedro, Belo Horizonte - MG, 30310-000",
+      "imagem": "imgs/posto6.jpeg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Tipo 2",
+        "potencia": "Indisponível",
+        "horarioFuncionamento": "07:30–20:00"
+      }
+    },
+    {
+      "id": "7",
+      "nome": "Loja Elétrica Ltda",
+      "coordenadas": [
+        -43.964112,
+        -19.957461
+      ],
+      "endereco": "Av. Barão Homem de Melo, 3300 - Nova Granada, Belo Horizonte - MG, 30494-080",
+      "imagem": "imgs/posto7.jpeg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Tipo 2",
+        "potencia": "7.4 kW",
+        "horarioFuncionamento": "07:30–20:00"
+      }
+    },
+    {
+      "id": "8",
+      "nome": "Nissan",
+      "coordenadas": [
+        -43.960714,
+        -19.962761
+      ],
+      "endereco": "Av. Barão Homem de Melo, 3400 - Nova Granada, Belo Horizonte - MG, 30494-270",
+      "imagem": "imgs/posto8.JPG",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Tipo 2",
+        "potencia": "22 kW",
+        "horarioFuncionamento": "Indisponível"
+      }
+    },
+    {
+      "id": "9",
+      "nome": "CVC Hiper Assai Belvedere",
+      "coordenadas": [
+        -43.941828,
+        -19.961575
+      ],
+      "endereco": "Rua Maria Luiza Santiago, 110 - Santa Lúcia, Belo Horizonte - MG, 30360-740",
+      "imagem": "imgs/posto9.jpg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "Indisponível",
+        "potencia": "Indisponível",
+        "horarioFuncionamento": "07:00–22:00"
+      }
+    },
+    {
+      "id": "10",
+      "nome": "Eletroposto Prime Veículos",
+      "coordenadas": [
+        -43.946762,
+        -19.972153
+      ],
+      "endereco": "Av. Raja Gabáglia, 4871 - Cidade Jardim, Belo Horizonte - MG, 30360-670",
+      "imagem": "imgs/posto10.jpeg",
+      "informacoesAdicionais": {
+        "tipoDePlug": "CSS e Tipo 2",
+        "potencia": "50 kW e 22 kW",
+        "horarioFuncionamento": "08:00–18:00"
+      }
+    }
+  ],
+  "topNews": [
+    {
+      "title": "O Kia EV9 foi eleito o melhor carro elétrico de 2024 pela World Car Awards, principal premiação mundial de carro do ano.",
+      "url": "https://quatrorodas.abril.com.br/noticias/kia-ev9-e-eleito-o-melhor-carro-do-mundo-em-2024-pela-world-car-awards#:~:text=Desbancando%20concorrentes%20como%20BYD%20Seal,melhor%20carro%20el%C3%A9trico%20de%202024&text=A%20World%20Car%20Awards%2C%20principal,Carro%20Mundial%20do%20Ano%202024.",
+      "id": "fd42"
+    },
+    {
+      "title": "No Brasil, a venda de carros elétricos cresceu 146% no primeiro semestre de 2024, totalizando 79.304 unidades.",
+      "url": "https://www.enelx.com/br/pt/conteudos/venda-de-carros-eletricos-no-brasil-cresce-146-no-1-semestre-de-2024#:~:text=Segundo%20um%20relat%C3%B3rio%20da%20Associa%C3%A7%C3%A3o,em%20todo%20o%20territ%C3%B3rio%20nacional.",
+      "id": "c3fa"
+    },
+    {
+      "title": "A frota de veículos elétricos no Brasil deve chegar a 11 milhões em 2040, representando mais de 20% da frota circulante atual.",
+      "url": "https://frotas.localiza.com/blog/frota-de-veiculos-eletricos#:~:text=Qual%20a%20previs%C3%A3o%20de%20crescimento,20%25%20da%20frota%20circulante%20atual.",
+      "id": "e140"
+    }
+  ],
+  "cadastroCalculo": [
+    {
+      "id": "e2f3",
+      "distance": 6565,
+      "fuelCost": 586.1607142857143,
+      "electricCost": 305.3488372093023,
+      "savings": 280.81187707641203
+    },
+    {
+      "id": "2b80",
+      "distance": 5454,
+      "fuelCost": 404,
+      "electricCost": 404,
+      "savings": 0
     }
   ]
 }
