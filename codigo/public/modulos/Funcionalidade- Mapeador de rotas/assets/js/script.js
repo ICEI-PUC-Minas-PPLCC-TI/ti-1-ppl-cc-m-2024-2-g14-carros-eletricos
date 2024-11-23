@@ -43,4 +43,44 @@ var directions = new MapboxDirections({
   map.addControl(directions, 'top-left');
 }
 
+async function carregarPontosDeRecarga() {
+    try {
+        const response = await fetch('http://localhost:3000/pontosDeRecarga');
+        if (!response.ok) throw new Error('Erro ao carregar os dados dos pontos de recarga');
+
+        const pontosDeRecarga = await response.json();
+        pontosDeRecarga.forEach(ponto => {
+            // Criar marcador no mapa
+            const marker = new mapboxgl.Marker()
+                .setLngLat(ponto.coordenadas)
+                .addTo(map);
+
+            // Conteúdo do popup
+            const popupContent = `
+                <div class="mapboxgl-popup-content">
+                    <h3>${ponto.nome}</h3>
+                    <p><strong>Endereço:</strong> ${ponto.endereco}</p>
+                    <img src="${ponto.imagem}" alt="Imagem do local" style="width:100%; border-radius:8px;">
+                    <p><strong>Tipo de Plug:</strong> ${ponto.informacoesAdicionais.tipoDePlug}</p>
+                    <p><strong>Potência:</strong> ${ponto.informacoesAdicionais.potencia}</p>
+                    <p><strong>Horário de Funcionamento:</strong> ${ponto.informacoesAdicionais.horarioFuncionamento}</p>
+                </div>
+            `;
+
+            // Adicionar evento ao marcador
+            marker.getElement().addEventListener('click', () => {
+                if (map.hasControl(popup)) popup.remove(); // Remove popup anterior, se existir
+                const popup = new mapboxgl.Popup({ closeOnClick: false, draggable: true })
+                    .setLngLat(ponto.coordenadas)
+                    .setHTML(popupContent)
+                    .addTo(map);
+            });
+        });
+    } catch (error) {
+        console.error('Erro:', error);
+        alert('Não foi possível carregar os pontos de recarga.');
+    }
+}
+
+
 
