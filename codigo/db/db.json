@@ -457,16 +457,7 @@
       "id": "d4b1"
     }
   ],
-  "resultados": [
-    {
-      "id": "64e8",
-      "potencia": 34,
-      "bateria": 23,
-      "porcentagem": 23,
-      "tempoCarregamentoHoras": "0.16",
-      "tempoCarregamentoMinutos": "9.34"
-    }
-  ],
+  "resultados": [],
   "perguntas": [
     {
       "id": "1",
