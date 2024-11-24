@@ -411,7 +411,6 @@
       "id": "aba3"
     }
   ],
-<<<<<<< HEAD
  "Rankings":[
   {
     "posicao": 1,
@@ -436,7 +435,7 @@
     "modelo": "Tesla Model 3",
     "ano": 2024,
     "tipo": "Sedan",
-    "preco": "R$ 250.000",
+    "preco": "R$ 250.000", 
     "quantidade": 6500,
     "imagem": "Tesla Model 3.png"
 },
@@ -541,9 +540,7 @@
         { "texto": "Não é uma prioridade alta para mim", "pontos": "d" }
       ]
     }
-  ]
-}
-=======
+  ],
+  
   "resultados": []
 }
->>>>>>> 1e2b8bdf7d088af078b0249ecc9555420469cecf
