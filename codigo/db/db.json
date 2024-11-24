@@ -358,68 +358,58 @@
       "id": "e140"
     }
   ],
-  "cadastroCalculo": [
+  "cadastroCalculo": [],
+  "Rankings": [
     {
-      "id": "e2f3",
-      "distance": 6565,
-      "fuelCost": 586.1607142857143,
-      "electricCost": 305.3488372093023,
-      "savings": 280.81187707641203
+      "posicao": 1,
+      "modelo": "BYD Dolphin",
+      "ano": 2024,
+      "tipo": "Hatch",
+      "preco": "R$ 140.000",
+      "quantidade": 8500,
+      "imagem": "BYD Dolphin.webp",
+      "id": "668b"
     },
     {
-      "id": "2b80",
-      "distance": 5454,
-      "fuelCost": 404,
-      "electricCost": 404,
-      "savings": 0
+      "posicao": 2,
+      "modelo": "BYD Song Plus",
+      "ano": 2024,
+      "tipo": "SUV",
+      "preco": "R$ 220.000",
+      "quantidade": 7200,
+      "imagem": "BYD Song.webp",
+      "id": "ce65"
+    },
+    {
+      "posicao": 3,
+      "modelo": "Tesla Model 3",
+      "ano": 2024,
+      "tipo": "Sedan",
+      "preco": "R$ 250.000",
+      "quantidade": 6500,
+      "imagem": "Tesla Model 3.png",
+      "id": "3b74"
+    },
+    {
+      "posicao": 4,
+      "modelo": "Haval H6 HEV",
+      "ano": 2024,
+      "tipo": "SUV",
+      "preco": "R$ 214.000",
+      "quantidade": 6000,
+      "imagem": "Haval H6.png",
+      "id": "288d"
+    },
+    {
+      "posicao": 5,
+      "modelo": "Toyota Corolla Cross Hybrid",
+      "ano": 2024,
+      "tipo": "SUV",
+      "preco": "R$ 210.990",
+      "quantidade": 5900,
+      "imagem": "Corolla Cross.jpeg",
+      "id": "aba3"
     }
   ],
- "Rankings":[
-  {
-    "posicao": 1,
-    "modelo": "BYD Dolphin",
-    "ano": 2024,
-    "tipo": "Hatch",
-    "preco": "R$ 140.000",
-    "quantidade": 8500,
-    "imagem": "BYD Dolphin.webp"
-},
-{
-    "posicao": 2,
-    "modelo": "BYD Song Plus",
-    "ano": 2024,
-    "tipo": "SUV",
-    "preco": "R$ 220.000",
-    "quantidade": 7200,
-    "imagem": "BYD Song.webp"
-},
-{
-    "posicao": 3,
-    "modelo": "Tesla Model 3",
-    "ano": 2024,
-    "tipo": "Sedan",
-    "preco": "R$ 250.000",
-    "quantidade": 6500,
-    "imagem": "Tesla Model 3.png"
-},
-{
-    "posicao": 4,
-    "modelo": "Haval H6 HEV",
-    "ano": 2024,
-    "tipo": "SUV",
-    "preco": "R$ 214.000",
-    "quantidade": 6000,
-    "imagem": "Haval H6.png"
-},
-{
-    "posicao": 5,
-    "modelo": "Toyota Corolla Cross Hybrid",
-    "ano": 2024,
-    "tipo": "SUV",
-    "preco": "R$ 210.990",
-    "quantidade": 5900,
-    "imagem": "Corolla Cross.jpeg"
+  "resultados": []
 }
- ]
-}
-
