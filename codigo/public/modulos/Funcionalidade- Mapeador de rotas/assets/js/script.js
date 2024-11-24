@@ -116,7 +116,7 @@ document.getElementById('search-button').addEventListener('click', async () => {
             const listItem = document.createElement('li');
             // Corrigido a interpolação da string
             listItem.innerHTML = `
-                <img src="assets/images/Icone.png" class="icon" alt="Ícone de recarga" />
+                <img src="assets/images/Icone2.png" class="icon" alt="Ícone de recarga" />
                 ${ponto.nome} - ${ponto.endereco} (${ponto.distance.toFixed(2)} km)
             `;
             listItem.onclick = () => {
