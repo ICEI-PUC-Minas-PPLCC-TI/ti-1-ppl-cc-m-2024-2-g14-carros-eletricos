@@ -1,98 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+:root {
+    --linear-gradient: 90deg, #00FA9A, #48D1CC, #191970;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #ffffff;
+    background: linear-gradient(var(--linear-gradient));
+    margin: 0;
+    padding: 0;
+    color: #d1d5db;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a2e;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 180px;
+    height: auto;
+    margin-left: 0;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(86, 51, 209);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #5c33e6;
 }
 
 .container {
-  background-color: #1e1e1e;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  width: 600px;
-  text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    flex: 1;
 }
 
-h1 {
-  font-size: 40px;
-  color: #81c784;
+.calculadora {
+    background-color: rgb(24, 32, 32);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    color: #d1d5db;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.calculadora h1 {
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-span {
-  font-size: 25px;
-  color: white;
-  font-weight: bold;
+.calculadora h1::before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: linear-gradient(var(--linear-gradient));
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-input {
-  padding: 15px;
-  font-size: 18px;
-  border: 1px solid #81c784;
-  border-radius: 5px;
-  outline: none;
-  background-color: #2c2c2c;
-  color: #ffffff;
+.campo {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
 }
 
-input:focus {
-  border-color: #66bb6a;
-}
-
-button {
-  background-color: #66bb6a;
-  color: white;
-  padding: 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: #388e3c;
-}
-
-.resultado {
-  margin-top: 30px;
-  font-size: 20px;
-  color: white;
-}
-
-.resultado span {
-  font-weight: bold;
-  color:white;
-}
-
-.resultado h2 {
-  color: #66bb6a;
+.campo span {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .campo-editavel {
-  background-color: grey;
-  color: #000000;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 5px;
-  min-height: 20px;
-  outline: none;
-  cursor: text;
-  font-size: 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #00FA9A;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
 .campo-editavel:focus {
-  border-color: #66bb6a;
-  box-shadow: 0 0 5px #66bb6a;
+    border-color: #48D1CC;
+}
+
+button {
+    background: linear-gradient(var(--linear-gradient));
+    border: none;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #191970;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.resultado h2 {
+    color: #00FA9A;
+    margin-bottom: 10px;
 }

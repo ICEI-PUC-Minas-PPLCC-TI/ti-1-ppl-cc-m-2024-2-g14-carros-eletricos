@@ -7,31 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <img src="assets/images/image.png" alt="Logo ChargeUp" id="logo" />
+    <ul class="menu">
+      <li><a href="#" class="menu-button">Início</a></li>
+      <li><a href="#" class="menu-button">Simulador Econômico</a></li>
+      <li><a href="#" class="menu-button">Catálogo de Carros</a></li>
+      <li><a href="#" class="menu-button">Notícias</a></li>
+      <li><a href="#" class="menu-button">Sobre</a></li>
+    </ul>
+  </header>
+
   <div class="container">
-    <h1>Estimativa do Tempo de Carregamento</h1>
-    <form id="carregamento-form">
-      <div class="campo">
-        <span>Potência de carregamento (kW)*</span>
-        <div contenteditable="true" data-campo="potencia" class="campo-editavel" placeholder="0"></div>
-      </div>
+    <div class="calculadora">
+      <h1>Estimativa do Tempo de Carregamento</h1>
+      <form id="carregamento-form">
+        <div class="campo">
+          <span>Potência de carregamento (kW)*</span>
+          <div contenteditable="true" data-campo="potencia" class="campo-editavel" placeholder="0"></div>
+        </div>
 
-      <div class="campo">
-        <span>Bateria útil (kWh)*</span>
-        <div contenteditable="true" data-campo="bateria" class="campo-editavel" placeholder="0"></div>
-      </div>
+        <div class="campo">
+          <span>Bateria útil (kWh)*</span>
+          <div contenteditable="true" data-campo="bateria" class="campo-editavel" placeholder="0"></div>
+        </div>
 
-      <div class="campo">
-        <span>Porcentagem da bateria a carregar*</span>
-        <div contenteditable="true" data-campo="porcentagem" class="campo-editavel" placeholder="50"></div>
-      </div>
+        <div class="campo">
+          <span>Porcentagem da bateria a carregar*</span>
+          <div contenteditable="true" data-campo="porcentagem" class="campo-editavel" placeholder="50"></div>
+        </div>
 
-      <div class="resultado">
-        <h2>Valor Calculado:</h2>
-        <p id="resultado">Tempo estimado de carregamento: <span>0</span> horas</p>
-      </div>
-      
-      <button type="button" id="calcular">Calcular</button>
-    </form>
+        <div class="resultado">
+          <h2>Valor Calculado:</h2>
+          <p id="resultado">Tempo estimado de carregamento: <span>0</span> horas</p>
+        </div>
+        
+        <button type="button" id="calcular">Calcular</button>
+      </form>
+    </div>
   </div>
 
   <script src="script.js"></script>
