@@ -1,72 +1,100 @@
-// script.js
 document.addEventListener("DOMContentLoaded", async () => {
-    const quizContainer = document.getElementById("quiz");
-    const resultContainer = document.getElementById("result-container");
-    const submitBtn = document.getElementById("submit-btn");
+    try {
+      // Carregar o arquivo JSON
+      const db = await fetch("db.json").then((response) => response.json());
+      const perguntas = db.perguntas;
+      const carros = db.carros1;
   
-    // Carrega o arquivo JSON
-    const db = await fetch("db.json").then((res) => res.json());
+      const quizContainer = document.getElementById("quiz-container");
+      const resultContainer = document.getElementById("result-container");
   
-    // Renderiza as perguntas
-    db.perguntas.forEach((pergunta, index) => {
-      const questionElement = document.createElement("div");
-      questionElement.classList.add("question");
-      questionElement.innerHTML = `
-        <h3>${index + 1}. ${pergunta.pergunta}</h3>
-        ${pergunta.opcoes
-          .map(
-            (opcao, i) => `
-            <label>
-              <input type="radio" name="question${index}" value="${opcao.pontos}">
-              ${opcao.texto}
-            </label>
-          `
-          )
-          .join("")}
-      `;
-      quizContainer.appendChild(questionElement);
-    });
+      let currentQuestion = 0;
+      const userAnswers = [];
   
-    // Calcula o resultado
-    submitBtn.addEventListener("click", () => {
-      const respostas = document.querySelectorAll("input[type=radio]:checked");
-      const pontos = {};
-  
-      respostas.forEach((resposta) => {
-        pontos[resposta.value] = (pontos[resposta.value] || 0) + 1;
-      });
-  
-      const maiorPonto = Object.keys(pontos).reduce((a, b) =>
-        pontos[a] > pontos[b] ? a : b
-      );
-  
-      const carro = db.carros.find((c) => c.tipo.toLowerCase().includes(maiorPonto));
-      mostrarResultado(carro);
-    });
-  
-    function mostrarResultado(carro) {
-      if (carro) {
-        resultContainer.style.display = "block";
-        resultContainer.innerHTML = `
-          <h2>Seu Carro Elétrico Ideal é:</h2>
-          <img src="${carro.imagem}" alt="${carro.nome}" style="max-width: 100%;">
-          <p><strong>Nome:</strong> ${carro.nome}</p>
-          <p><strong>Preço:</strong> ${carro.preco}</p>
-          <p><strong>Link para compra:</strong> <a href="${carro.link_venda}" target="_blank">Clique aqui</a></p>
+      // Mostrar a pergunta atual
+      function showQuestion() {
+        const question = perguntas[currentQuestion];
+        quizContainer.innerHTML = `
+          <div class="question">
+            <h2>${question.pergunta}</h2>
+            <div class="options">
+              ${question.opcoes
+                .map(
+                  (opcao) =>
+                    `<button onclick="selectAnswer('${opcao.pontos}')">${opcao.texto}</button>`
+                )
+                .join("")}
+            </div>
+          </div>
         `;
       }
+  
+      // Selecionar a resposta e avançar para a próxima pergunta
+      window.selectAnswer = (pontos) => {
+        userAnswers.push(pontos);
+        currentQuestion++;
+        if (currentQuestion < perguntas.length) {
+          showQuestion();
+        } else {
+          calculateResult();
+        }
+      };
+  
+      // Calcular o resultado final
+      function calculateResult() {
+        const score = userAnswers.reduce((acc, cur) => {
+          acc[cur] = (acc[cur] || 0) + 1;
+          return acc;
+        }, {});
+  
+        const topScore = Object.keys(score).reduce((a, b) =>
+          score[a] > score[b] ? a : b
+        );
+  
+        const idealCar = carros.find((carro) => carro.id.startsWith(topScore));
+  
+        quizContainer.style.display = "none";
+        resultContainer.style.display = "block";
+  
+        if (idealCar) {
+          resultContainer.innerHTML = `
+            <div class="result">
+              <h2>Seu Carro Ideal é o ${idealCar.nome}!</h2>
+              <p>Preço: ${idealCar.preco}</p>
+              <p>Ano: ${idealCar.ano}</p>
+              <p>Marca: ${idealCar.marca}</p>
+              <p>Tipo: ${idealCar.tipo}</p>
+              <img src="${idealCar.imagem}" alt="${idealCar.nome}">
+              <a href="${idealCar.link_venda}" target="_blank">
+                <button>Saiba Mais</button>
+              </a>
+              <button class="retry" onclick="restartQuiz()">Tentar Novamente</button>
+            </div>
+          `;
+        } else {
+          resultContainer.innerHTML = `
+            <div class="result">
+              <p>Desculpe, não encontramos um carro para você.</p>
+              <button class="retry" onclick="restartQuiz()">Tentar Novamente</button>
+            </div>
+          `;
+        }
+      }
+  
+      // Reiniciar o quiz
+      window.restartQuiz = () => {
+        currentQuestion = 0;
+        userAnswers.length = 0;
+        resultContainer.style.display = "none";
+        quizContainer.style.display = "block";
+        showQuestion();
+      };
+  
+      // Iniciar o quiz
+      showQuestion();
+    } catch (error) {
+      console.error("Erro ao carregar o quiz:", error);
+      quizContainer.innerHTML = "<p>Erro ao carregar o quiz. Tente novamente.</p>";
     }
   });
-  try {
-    const db = await fetch("db.json").then((res) => {
-      if (!res.ok) throw new Error("Erro ao carregar o JSON");
-      return res.json();
-    });
   
-    console.log("JSON carregado com sucesso:", db);
-  
-    // Código para exibir as perguntas
-  } catch (error) {
-    console.error("Erro ao carregar o arquivo:", error);
-    document.getElementById("quiz").innerHTML = "<p>Erro ao carregar as perguntas. Tente novamente.</p>";
-  }
