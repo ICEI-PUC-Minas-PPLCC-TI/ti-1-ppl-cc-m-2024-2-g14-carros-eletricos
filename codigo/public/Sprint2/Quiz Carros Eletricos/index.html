@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz: Descubra Seu Carro Elétrico Ideal</title>
+  <title>Quiz - Carro Elétrico Ideal</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,23 +20,20 @@
   </header>
 
   <main>
-    <!-- Bloco 1: Título e Subtítulo -->
-    <section class="quiz-header">
-      <div class="header-block">
-        <h1>Descubra Seu Carro Elétrico Ideal</h1>
-        <p>
-          Você já se perguntou qual carro elétrico combina melhor com o seu estilo de vida e preferências? 
-          Este quiz vai te ajudar a descobrir o modelo perfeito para você! Responda algumas perguntas sobre suas 
-          prioridades e preferências, e nós indicaremos o carro elétrico ideal para acompanhar suas aventuras 
-          e necessidades diárias. Seja qual for o seu objetivo – economia, potência, espaço ou tecnologia – 
-          vamos encontrar o seu match perfeito no mundo dos elétricos!
-        </p>
-      </div>
+    <section class="quiz-container">
+      <h1>Descubra Seu Carro Elétrico Ideal</h1>
+      <p>
+        Responda às perguntas abaixo para encontrar o carro elétrico perfeito para você!
+      </p>
+      <div id="quiz"></div>
+      <button id="submit-btn">Descobrir meu carro!</button>
     </section>
 
-    <!-- Bloco 2: Perguntas do Quiz -->
-    <section class="quiz-container">
-      <div class="questions-block" id="quiz-content"></div>
+    <section class="result-container" id="result-container">
+      <h2>Seu Carro Elétrico Ideal é:</h2>
+      <div id="result">
+        <!-- Os resultados serão carregados dinamicamente aqui -->
+      </div>
     </section>
   </main>
 
