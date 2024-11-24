@@ -459,6 +459,53 @@
 }
  ],
 
+  "carros1": [
+    {
+      "nome": "Seres 3",
+      "preco": "R$ 200.000",
+      "ano": 2020,
+      "marca": "Seres",
+      "modelo": "Seres 3",
+      "tipo": "SUV elétrico",
+      "imagem": "imgs/seres3.jpg",
+      "link_venda": "https://www.driveseres.com.br/seres-3-bev",
+      "id": "1e93"
+    },
+    {
+      "nome": "Chevrolet Bolt EV",
+      "preco": "R$ 220.000",
+      "ano": 2021,
+      "marca": "Chevrolet",
+      "modelo": "Bolt EV",
+      "tipo": "Hatch elétrico",
+      "imagem": "imgs/-Chevy-Bolt.jpg",
+      "link_venda": "https://www.chevrolet.com.br/eletrico/bolt-euv",
+      "id": "a926"
+    },
+    {
+      "nome": "Tesla Model 3",
+      "preco": "R$ 280.000",
+      "ano": 2022,
+      "marca": "Tesla",
+      "modelo": "Model 3",
+      "tipo": "Sedan elétrico",
+      "imagem": "imgs/Tesla Model3333.jpg",
+      "link_venda": "https://www.tesla.com/model3",
+      "id": "5fe5"
+    },
+    {
+      "nome": "Nissan Leaf",
+      "preco": "R$ 190.000",
+      "ano": 2021,
+      "marca": "Nissan",
+      "modelo": "Leaf",
+      "tipo": "Hatch elétrico",
+      "imagem": "imgs/NissanLeaf.jpg",
+      "link_venda": "imgs/nisan23.jpg",
+      "id": "d4b1"
+    }
+  ],
+ 
   "perguntas": [
     {
       "id": 1,
@@ -540,7 +587,5 @@
         { "texto": "Não é uma prioridade alta para mim", "pontos": "d" }
       ]
     }
-  ],
-  
-  "resultados": []
+  ]
 }
