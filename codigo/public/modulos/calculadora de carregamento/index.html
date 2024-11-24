@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Carregamento</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
@@ -42,11 +42,16 @@
           <p id="resultado">Tempo estimado de carregamento: <span>0</span> horas</p>
         </div>
         
-        <button type="button" id="calcular">Calcular</button>
+        <div class="botoes">
+          <button type="button" id="calcular">Calcular</button>
+          <button type="button" id="loadData">Carregar Dados Salvos</button>
+        </div>
+
+        <div id="resultsDiv"></div>
       </form>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

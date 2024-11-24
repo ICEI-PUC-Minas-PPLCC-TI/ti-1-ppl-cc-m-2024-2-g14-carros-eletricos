@@ -24,17 +24,22 @@ function renderQuiz(perguntas) {
     perguntas.forEach((pergunta, index) => {
         const questionElement = document.createElement("div");
         questionElement.classList.add("question");
-        if (index === 0) questionElement.classList.add("active"); // Mostrar a primeira pergunta
+        if (index === 0) questionElement.classList.add("active");
 
-        questionElement.innerHTML = `<h3>${index + 1}. ${pergunta.pergunta}</h3>`;
+        // Adiciona o número da pergunta em uma bolinha
+        questionElement.innerHTML = `
+          <div class="question-number">${index + 1}</div>
+          <h3>${pergunta.pergunta}</h3>
+        `;
 
+        // Adiciona as opções
         const optionsContainer = document.createElement("div");
         optionsContainer.classList.add("options");
 
-        pergunta.opcoes.forEach((opcao, opcaoIndex) => {
+        pergunta.opcoes.forEach((opcao) => {
             const button = document.createElement("button");
-            button.classList.add("circle");
-            button.textContent = String.fromCharCode(97 + opcaoIndex); // Letras a, b, c, d
+            button.classList.add("option");
+            button.textContent = opcao.texto;
             button.onclick = () => {
                 console.log(`Você escolheu: ${opcao.texto} (Perfil ${opcao.pontos})`);
                 irParaProximaPergunta(perguntas);

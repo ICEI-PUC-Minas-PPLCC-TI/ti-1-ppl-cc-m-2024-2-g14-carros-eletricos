@@ -1,32 +1,29 @@
-/* Estilo Global */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f8ff;
-  color: #333;
+/* Estilo para o Bloco 1: Cabeçalho do Quiz */
+.quiz-header {
+  text-align: center;
+  padding: 30px;
+  background-color: #e5f5fc;
+  border-bottom: 2px solid #88c0d0;
 }
 
-header {
-  background-color: #88c0d0;
-  padding: 10px 20px;
+.quiz-header .header-block {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+.quiz-header h1 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 15px;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+.quiz-header p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
 }
 
-/* Estilo do Quiz */
+/* Estilo para o Bloco 2: Perguntas do Quiz */
 .quiz-container {
   max-width: 800px;
   margin: 40px auto;
@@ -34,16 +31,12 @@ header nav ul li a {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
-.quiz-container h1 {
-  color: #444;
-}
-
-.quiz-container p {
-  margin-bottom: 20px;
-  color: #666;
+.questions-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .question {
@@ -55,30 +48,41 @@ header nav ul li a {
   display: block;
 }
 
-.question h3 {
-  margin-bottom: 20px;
-  color: #444;
+.question-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #88c0d0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
 }
 
 .options {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
-button.circle {
+button.option {
   background-color: #88c0d0;
   color: white;
   border: none;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
 }
 
-button.circle:hover {
+button.option:hover {
   background-color: #5e81ac;
 }
 

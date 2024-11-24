@@ -15,6 +15,7 @@ async function carregarPontosDeRecarga() {
         if (!response.ok) throw new Error('Erro ao carregar os dados dos pontos de recarga');
 
         const pontosDeRecarga = await response.json();
+
         pontosDeRecarga.forEach(ponto => {
             const marker = new mapboxgl.Marker()
                 .setLngLat(ponto.coordenadas)
@@ -24,7 +25,7 @@ async function carregarPontosDeRecarga() {
                 <div class="mapboxgl-popup-content">
                     <h3>${ponto.nome}</h3>
                     <p><strong>Endereço:</strong> ${ponto.endereco}</p>
-                    <img src="${ponto.imagem}" alt="Imagem do local" style="width:100%; border-radius:8px;">
+                   <img src="${ponto.imagem}" alt="Imagem do local" style="width:100%; border-radius:8px;">
                     <p><strong>Tipo de Plug:</strong> ${ponto.informacoesAdicionais.tipoDePlug}</p>
                     <p><strong>Potência:</strong> ${ponto.informacoesAdicionais.potencia}</p>
                     <p><strong>Horário de Funcionamento:</strong> ${ponto.informacoesAdicionais.horarioFuncionamento}</p>
@@ -60,4 +61,5 @@ async function carregarPontosDeRecarga() {
         console.error('Erro:', error);
     }
 }
+
 carregarPontosDeRecarga();
