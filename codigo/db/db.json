@@ -420,6 +420,88 @@
     "quantidade": 5900,
     "imagem": "Corolla Cross.jpeg"
 }
- ]
-}
+ ],
 
+  "perguntas": [
+    {
+      "id": 1,
+      "pergunta": "Qual é a sua principal prioridade ao escolher um carro?",
+      "opcoes": [
+        { "texto": "Economia de combustível", "pontos": "a" },
+        { "texto": "Desempenho e velocidade", "pontos": "b" },
+        { "texto": "Espaço e conforto", "pontos": "c" },
+        { "texto": "Tecnologia e inovação", "pontos": "d" }
+      ]
+    },
+    {
+      "id": 2,
+      "pergunta": "Como você costuma usar o carro?",
+      "opcoes": [
+        { "texto": "Para deslocamentos curtos na cidade", "pontos": "a" },
+        { "texto": "Para viagens longas", "pontos": "b" },
+        { "texto": "Para compromissos profissionais", "pontos": "c" },
+        { "texto": "Para curtir com estilo", "pontos": "d" }
+      ]
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual é a sua faixa de orçamento para comprar um carro?",
+      "opcoes": [
+        { "texto": "Até R$ 100.000", "pontos": "a" },
+        { "texto": "De R$ 100.000 a R$ 200.000", "pontos": "b" },
+        { "texto": "De R$ 200.000 a R$ 300.000", "pontos": "c" },
+        { "texto": "Acima de R$ 300.000", "pontos": "d" }
+      ]
+    },
+    {
+      "id": 4,
+      "pergunta": "Você prefere um carro com design mais clássico ou moderno?",
+      "opcoes": [
+        { "texto": "Clássico", "pontos": "c" },
+        { "texto": "Moderno", "pontos": "d" },
+        { "texto": "Tanto faz, desde que seja funcional", "pontos": "a" },
+        { "texto": "Algo que chame atenção", "pontos": "b" }
+      ]
+    },
+    {
+      "id": 5,
+      "pergunta": "Quantas pessoas costumam usar o carro ao mesmo tempo?",
+      "opcoes": [
+        { "texto": "Apenas eu", "pontos": "a" },
+        { "texto": "Duas ou três pessoas", "pontos": "b" },
+        { "texto": "Família grande (mais de 4 pessoas)", "pontos": "c" },
+        { "texto": "Depende da ocasião", "pontos": "d" }
+      ]
+    },
+    {
+      "id": 6,
+      "pergunta": "Quais recursos tecnológicos você valoriza mais no carro?",
+      "opcoes": [
+        { "texto": "Assistente de direção autônoma", "pontos": "d" },
+        { "texto": "Painel multimídia avançado", "pontos": "b" },
+        { "texto": "Conectividade básica (Bluetooth, USB)", "pontos": "a" },
+        { "texto": "Conforto e tecnologia equilibrados", "pontos": "c" }
+      ]
+    },
+    {
+      "id": 7,
+      "pergunta": "Você prefere carregar o carro em casa ou em estações públicas?",
+      "opcoes": [
+        { "texto": "Em casa", "pontos": "a" },
+        { "texto": "Prefiro ter mais opções em locais públicos", "pontos": "d" },
+        { "texto": "Ambos funcionam para mim", "pontos": "c" },
+        { "texto": "Não tenho preferência", "pontos": "b" }
+      ]
+    },
+    {
+      "id": 8,
+      "pergunta": "Quanto você se preocupa com o impacto ambiental do seu carro?",
+      "opcoes": [
+        { "texto": "É minha principal preocupação", "pontos": "a" },
+        { "texto": "Me preocupo, mas desempenho também importa", "pontos": "b" },
+        { "texto": "Gosto de equilíbrio entre conforto e sustentabilidade", "pontos": "c" },
+        { "texto": "Não é uma prioridade alta para mim", "pontos": "d" }
+      ]
+    }
+  ]
+}
