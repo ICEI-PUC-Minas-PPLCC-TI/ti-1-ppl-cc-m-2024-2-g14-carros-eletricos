@@ -1,9 +1,47 @@
-/* Estilo para o Bloco 1: Cabeçalho do Quiz */
+/* Estilo Global */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Estilo da Barra de Navegação */
+header {
+  background-color: #563cef; /* Roxo escuro */
+  padding: 10px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #83e1b9; /* Verde claro */
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #83e1b9;
+  color: #563cef;
+}
+
+/* Bloco 1: Cabeçalho do Quiz */
 .quiz-header {
   text-align: center;
   padding: 30px;
-  background-color: #e5f5fc;
-  border-bottom: 2px solid #88c0d0;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #83e1b9;
 }
 
 .quiz-header .header-block {
@@ -13,7 +51,7 @@
 
 .quiz-header h1 {
   font-size: 2rem;
-  color: #444;
+  color: #563cef;
   margin-bottom: 15px;
 }
 
@@ -23,7 +61,7 @@
   line-height: 1.5;
 }
 
-/* Estilo para o Bloco 2: Perguntas do Quiz */
+/* Bloco 2: Perguntas do Quiz */
 .quiz-container {
   max-width: 800px;
   margin: 40px auto;
@@ -54,7 +92,7 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #88c0d0;
+  background-color: #563cef; /* Roxo escuro */
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -70,7 +108,7 @@
 }
 
 button.option {
-  background-color: #88c0d0;
+  background-color: #563cef; /* Roxo escuro */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -83,7 +121,8 @@ button.option {
 }
 
 button.option:hover {
-  background-color: #5e81ac;
+  background-color: #83e1b9; /* Verde claro */
+  color: #563cef;
 }
 
 /* Transição suave */
