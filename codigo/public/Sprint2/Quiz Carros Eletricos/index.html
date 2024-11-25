@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz de Carros Elétricos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Carro Elétrico</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Caminho do arquivo CSS -->
 </head>
 <body>
-  <header>
-    <h1>Descubra Seu Carro Elétrico Ideal</h1>
-  </header>
-  <div class="container">
-    <div id="quiz-container">
-      <p>Carregando perguntas...</p>
-    </div>
-    <div id="result-container" style="display: none;">
-      <!-- Resultado será exibido aqui -->
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <header>
+        <h1>Descubra Seu Carro Elétrico Ideal</h1>
+        <p>Responda algumas perguntas e encontre o modelo perfeito para você!</p>
+        <nav>
+            <button>Início</button>
+            <button>Mapa</button>
+            <button>Simulador</button>
+            <button>Tabela</button>
+            <button>Quiz</button>
+        </nav>
+    </header>
+    <main>
+        <div id="quiz-container">
+            <!-- Perguntas do quiz aqui -->
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>Seu Carro Elétrico Ideal é:</h2>
+            <img src="carro-eletrico.jpg" alt="Carro elétrico">
+            <h3>Hyundai Kona EV</h3>
+            <p><strong>Ano:</strong> 2018</p>
+            <p><strong>Marca:</strong> Hyundai</p>
+            <p><strong>Modelo:</strong> Kona EV</p>
+            <p><strong>Tipo:</strong> SUV elétrico</p>
+            <p><strong>Preço:</strong> R$ XXXXX</p>
+        </div>
+    </main>
+    <footer>
+        © 2024 Quiz Carro Elétrico. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
