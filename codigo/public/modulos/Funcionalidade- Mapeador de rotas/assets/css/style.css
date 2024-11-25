@@ -13,7 +13,7 @@
 }
 
 body {
-   background-image: url("/ti-1-ppl-cc-m-2024-2-g14-carros-eletricos/codigo/public/modulos/Funcionalidade-\ Mapeador\ de\ rotas/assets/images/imagem.png");
+   background-image: url(../images/imagem.png);
    background-size: cover;
    background-position: center;
    
