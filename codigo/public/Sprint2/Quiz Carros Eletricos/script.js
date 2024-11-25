@@ -1,143 +1,155 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const quizContainer = document.getElementById("quiz-container");
-    const resultContainer = document.getElementById("result-container");
-    const submitBtn = document.getElementById("submit-btn");
-  
-    // Perguntas do Quiz
-    const perguntas = [
-      {
-        pergunta: "Qual é a sua prioridade ao escolher um carro?",
-        opcoes: [
-          { texto: "Economia de combustível", pontos: "tesla" },
-          { texto: "Desempenho e luxo", pontos: "audi" },
-          { texto: "Simplicidade e praticidade", pontos: "fiat" },
-          { texto: "Sustentabilidade", pontos: "nissan" }
-        ]
-      },
-      {
-        pergunta: "Como você usará o carro no dia a dia?",
-        opcoes: [
-          { texto: "Viagens longas e conforto", pontos: "audi" },
-          { texto: "Trajetos curtos na cidade", pontos: "fiat" },
-          { texto: "Trajetos urbanos e economia", pontos: "nissan" },
-          { texto: "Equilíbrio entre luxo e tecnologia", pontos: "tesla" }
-        ]
-      },
-      {
-        pergunta: "Qual é o tipo de design que você prefere?",
-        opcoes: [
-          { texto: "Modernidade e inovação", pontos: "tesla" },
-          { texto: "Elegância e robustez", pontos: "audi" },
-          { texto: "Compacto e funcional", pontos: "fiat" },
-          { texto: "Simples e ecológico", pontos: "nissan" }
-        ]
-      },
-      {
-        pergunta: "Quanto espaço você precisa no carro?",
-        opcoes: [
-          { texto: "Muito espaço para família e bagagem", pontos: "audi" },
-          { texto: "Espaço médio, suficiente para dois passageiros", pontos: "fiat" },
-          { texto: "Espaço básico, mais para trajetos curtos", pontos: "nissan" },
-          { texto: "Espaço moderado com conforto extra", pontos: "tesla" }
-        ]
-      },
-      {
-        pergunta: "O que mais te atrai em um carro elétrico?",
-        opcoes: [
-          { texto: "Alta tecnologia e inovação", pontos: "tesla" },
-          { texto: "Luxo e desempenho", pontos: "audi" },
-          { texto: "Custo-benefício", pontos: "nissan" },
-          { texto: "Mobilidade urbana compacta", pontos: "fiat" }
-        ]
-      }
-    ];
-  
-    // Carros disponíveis
-    const carros = {
-      tesla: {
-        nome: "Tesla Model 3",
-        preco: "R$ 280.000",
-        imagem: "imgs/Tesla Model3333.jpg",
-        descricao: "Um sedã elétrico de alto desempenho e tecnologia avançada.",
-        link: "https://www.tesla.com/model3"
-      },
-      audi: {
-        nome: "Audi e-tron",
-        preco: "R$ 500.000",
-        imagem: "imgs/Audi e-tron.jpg",
-        descricao: "SUV elétrico premium, ideal para luxo e conforto.",
-        link: "https://www.audi.com.br"
-      },
-      fiat: {
-        nome: "Fiat 500e",
-        preco: "R$ 180.000",
-        imagem: "imgs/Fiat 500e.jpg",
-        descricao: "Compacto elétrico, perfeito para trajetos urbanos.",
-        link: "https://500e.fiat.com.br"
-      },
-      nissan: {
-        nome: "Nissan Leaf",
-        preco: "R$ 190.000",
-        imagem: "imgs/NissanLeaf.jpg",
-        descricao: "Um hatch elétrico focado em sustentabilidade e economia.",
-        link: "https://www.nissan.com"
-      }
-    };
-  
-    // Renderizar as perguntas no HTML
-    perguntas.forEach((pergunta, index) => {
-      const questionEl = document.createElement("div");
-      questionEl.classList.add("quiz-question");
-  
-      questionEl.innerHTML = `
-        <h3>${index + 1}. ${pergunta.pergunta}</h3>
-        ${pergunta.opcoes
-          .map(
-            (opcao) => `
-            <label>
-              <input type="radio" name="question${index}" value="${opcao.pontos}">
-              ${opcao.texto}
-            </label>
-          `
-          )
-          .join("")}
-      `;
-  
-      quizContainer.appendChild(questionEl);
-    });
-  
-    // Evento de clique para calcular resultado
-    submitBtn.addEventListener("click", () => {
-      const respostas = document.querySelectorAll("input[type='radio']:checked");
-  
-      if (respostas.length !== perguntas.length) {
-        alert("Por favor, responda todas as perguntas!");
-        return;
-      }
-  
-      const pontos = {};
-      respostas.forEach((resposta) => {
-        pontos[resposta.value] = (pontos[resposta.value] || 0) + 1;
+  const quizContainer = document.getElementById("quiz-container");
+  const resultContainer = document.getElementById("result-container");
+
+  // Perguntas do Quiz
+  const perguntas = [
+    {
+      pergunta: "Qual tipo de carro você prefere?",
+      opcoes: ["SUV elétrico", "Hatch elétrico", "Sedan elétrico", "Compacto elétrico"],
+      chave: "tipo"
+    },
+    {
+      pergunta: "Qual faixa de preço você considera ideal?",
+      opcoes: ["R$ 150.000 - R$ 200.000", "R$ 200.001 - R$ 300.000", "R$ 300.001 - R$ 500.000", "Acima de R$ 500.000"],
+      chave: "preco"
+    },
+    {
+      pergunta: "Você prefere modelos mais recentes ou mais antigos?",
+      opcoes: ["2020 ou mais antigos", "2021", "2022", "2023 ou mais recentes"],
+      chave: "ano"
+    }
+  ];
+
+  let respostas = {};
+
+  function carregarPerguntas() {
+    quizContainer.innerHTML = ""; // Limpa o conteúdo do quiz
+
+    perguntas.forEach((item, index) => {
+      const perguntaDiv = document.createElement("div");
+      perguntaDiv.classList.add("pergunta");
+
+      const titulo = document.createElement("h2");
+      titulo.textContent = item.pergunta;
+      perguntaDiv.appendChild(titulo);
+
+      item.opcoes.forEach(opcao => {
+        const label = document.createElement("label");
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = `pergunta${index}`;
+        input.value = opcao;
+        input.onclick = () => salvarResposta(item.chave, opcao);
+
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(opcao));
+        label.style.display = "block";
+        label.style.margin = "0.5rem 0";
+        perguntaDiv.appendChild(label);
       });
-  
-      const vencedor = Object.keys(pontos).reduce((a, b) =>
-        pontos[a] > pontos[b] ? a : b
-      );
-  
-      const carro = carros[vencedor];
-      mostrarResultado(carro);
+
+      quizContainer.appendChild(perguntaDiv);
     });
-  
-    // Mostrar resultado
-    function mostrarResultado(carro) {
-      resultContainer.style.display = "block";
+
+    const botaoFinalizar = document.createElement("button");
+    botaoFinalizar.textContent = "Descobrir Meu Carro Ideal";
+    botaoFinalizar.onclick = buscarResultado;
+    botaoFinalizar.style.marginTop = "1rem";
+    botaoFinalizar.style.padding = "0.7rem 1.5rem";
+    botaoFinalizar.style.fontSize = "1rem";
+    botaoFinalizar.style.color = "#fff";
+    botaoFinalizar.style.backgroundColor = "#4CAF50";
+    botaoFinalizar.style.border = "none";
+    botaoFinalizar.style.borderRadius = "5px";
+    botaoFinalizar.style.cursor = "pointer";
+    botaoFinalizar.style.transition = "background-color 0.3s";
+    botaoFinalizar.onmouseover = () => (botaoFinalizar.style.backgroundColor = "#45a049");
+    botaoFinalizar.onmouseout = () => (botaoFinalizar.style.backgroundColor = "#4CAF50");
+
+    quizContainer.appendChild(botaoFinalizar);
+  }
+
+  function salvarResposta(chave, valor) {
+    respostas[chave] = valor;
+  }
+
+  function buscarResultado() {
+    fetch("http://localhost:3000/carros")
+      .then(response => response.json())
+      .then(carros => {
+        // Agora vamos procurar um carro que corresponda pelo menos parcialmente às respostas
+        const resultado = carros.filter(carro => {
+          return (
+            (respostas.tipo ? carro.tipo === respostas.tipo : true) &&
+            (respostas.preco ? compararPreco(carro.preco, respostas.preco) : true) &&
+            (respostas.ano ? compararAno(carro.ano, respostas.ano) : true)
+          );
+        });
+
+        // Se não houver correspondência, exibe o primeiro carro da lista
+        if (resultado.length === 0) {
+          exibirResultado(carros[0]);  // Exibe o primeiro carro se não encontrar nenhuma correspondência
+        } else {
+          exibirResultado(resultado[0]);  // Exibe o primeiro carro correspondente
+        }
+      })
+      .catch(error => console.error("Erro ao buscar dados:", error));
+  }
+
+  function compararPreco(precoCarro, faixaPreco) {
+    const valor = parseInt(precoCarro.replace("R$", "").replace(".", "").trim());
+    switch (faixaPreco) {
+      case "R$ 150.000 - R$ 200.000":
+        return valor >= 150000 && valor <= 200000;
+      case "R$ 200.001 - R$ 300.000":
+        return valor > 200000 && valor <= 300000;
+      case "R$ 300.001 - R$ 500.000":
+        return valor > 300000 && valor <= 500000;
+      case "Acima de R$ 500.000":
+        return valor > 500000;
+      default:
+        return false;
+    }
+  }
+
+  function compararAno(anoCarro, faixaAno) {
+    switch (faixaAno) {
+      case "2020 ou mais antigos":
+        return anoCarro <= 2020;
+      case "2021":
+        return anoCarro === 2021;
+      case "2022":
+        return anoCarro === 2022;
+      case "2023 ou mais recentes":
+        return anoCarro >= 2023;
+      default:
+        return false;
+    }
+  }
+
+  function exibirResultado(carro) {
+    quizContainer.style.display = "none";
+    resultContainer.style.display = "block";
+
+    if (carro) {
       resultContainer.innerHTML = `
-        <h2>Seu Carro Ideal é: ${carro.nome}</h2>
+        <h2>Seu carro ideal é:</h2>
         <img src="${carro.imagem}" alt="${carro.nome}">
+        <p><strong>Nome:</strong> ${carro.nome}</p>
         <p><strong>Preço:</strong> ${carro.preco}</p>
-        <p>${carro.descricao}</p>
-        <a href="${carro.link}" target="_blank">Saiba mais</a>
+        <p><strong>Ano:</strong> ${carro.ano}</p>
+        <p><strong>Tipo:</strong> ${carro.tipo}</p>
+        <a href="${carro.link_venda}" target="_blank" style="color: #4CAF50; text-decoration: none;">Saiba mais</a>
+      `;
+    } else {
+      resultContainer.innerHTML = `
+        <h2>Não encontramos um carro ideal para suas preferências, mas aqui está uma sugestão:</h2>
+        <p>Confira o primeiro carro da nossa lista!</p>
       `;
     }
-  });
-  
+  }
+
+  // Inicializa o quiz
+  carregarPerguntas();
+});
