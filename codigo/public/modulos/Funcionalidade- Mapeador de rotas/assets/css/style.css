@@ -13,7 +13,7 @@
 }
 
 body {
-   background-image: url('assets/images/imagem.png');
+   background-image: url("/ti-1-ppl-cc-m-2024-2-g14-carros-eletricos/codigo/public/modulos/Funcionalidade-\ Mapeador\ de\ rotas/assets/images/imagem.png");
    background-size: cover;
    background-position: center;
    
@@ -43,19 +43,31 @@ header {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 1rem;
+    gap: 8rem;
     padding: 0;
+    align-items: center;
+    width: 100%;
 }
 
 .menu-button {
-    padding: 0.5rem 1rem;
-    background-color: rgb(86, 51, 209);
-    color: white;
-    border: none;
+    padding: 1rem 2rem;
+    background: linear-gradient(var(--linear-gradient)); /* Gradiente no fundo */
+    color: transparent; /* Tornar o texto transparente */
+    -webkit-background-clip: text; /* Clip no texto para mostrar o gradiente */
+    background-clip: text; /* Clip no texto para mostrar o gradiente */
+    border-bottom: 1px solid #00FA9A;
     border-radius: 4px;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    flex-grow: 1;
+   
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    
+  
+   
 }
 
 #logo {
