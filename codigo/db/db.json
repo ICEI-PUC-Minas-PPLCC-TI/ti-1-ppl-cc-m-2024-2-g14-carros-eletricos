@@ -411,6 +411,57 @@
       "id": "aba3"
     }
   ],
+<<<<<<< HEAD
+ "Rankings":[
+  {
+    "posicao": 1,
+    "modelo": "BYD Dolphin",
+    "ano": 2024,
+    "tipo": "Hatch",
+    "preco": "R$ 140.000",
+    "quantidade": 8500,
+    "imagem": "BYD Dolphin.webp"
+},
+{
+    "posicao": 2,
+    "modelo": "BYD Song Plus",
+    "ano": 2024,
+    "tipo": "SUV",
+    "preco": "R$ 220.000",
+    "quantidade": 7200,
+    "imagem": "BYD Song.webp"
+},
+{
+    "posicao": 3,
+    "modelo": "Tesla Model 3",
+    "ano": 2024,
+    "tipo": "Sedan",
+    "preco": "R$ 250.000",
+    "quantidade": 6500,
+    "imagem": "Tesla Model 3.png"
+},
+{
+    "posicao": 4,
+    "modelo": "Haval H6 HEV",
+    "ano": 2024,
+    "tipo": "SUV",
+    "preco": "R$ 214.000",
+    "quantidade": 6000,
+    "imagem": "Haval H6.png"
+},
+{
+    "posicao": 5,
+    "modelo": "Toyota Corolla Cross Hybrid",
+    "ano": 2024,
+    "tipo": "SUV",
+    "preco": "R$ 210.990",
+    "quantidade": 5900,
+    "imagem": "Corolla Cross.jpeg"
+}
+ ],
+
+ 
+=======
   "carros1": [
     {
       "nome": "Seres 3",
@@ -457,16 +508,8 @@
       "id": "d4b1"
     }
   ],
-  "resultados": [
-    {
-      "id": "64e8",
-      "potencia": 34,
-      "bateria": 23,
-      "porcentagem": 23,
-      "tempoCarregamentoHoras": "0.16",
-      "tempoCarregamentoMinutos": "9.34"
-    }
-  ],
+  "resultados": [],
+>>>>>>> a92a9e57d2d7fe3dfef62523757be7f84dfc2f88
   "perguntas": [
     {
       "id": "1",
