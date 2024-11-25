@@ -7,7 +7,7 @@ navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
 function successLocation(position) {
     const { latitude, longitude } = position.coords;
     setupMap([longitude, latitude]);
-    carregarPontosDeRecarga(latitude, longitude);
+    carregarPontosDeRecarga();
 }
 
 function errorLocation() {
@@ -42,12 +42,11 @@ async function carregarPontosDeRecarga() {
 
         const pontosDeRecarga = await response.json();
 
-        // Mostrar todos os pontos no mapa
         pontosDeRecarga.forEach(ponto => {
             const el = document.createElement('div');
             el.className = 'custom-marker';
-            el.style.backgroundImage = `url('assets/images/Icone.png')`; 
-            el.style.width = '40px'; 
+            el.style.backgroundImage = `url('assets/images/Icone.png')`;
+            el.style.width = '40px';
             el.style.height = '40px';
 
             const marker = new mapboxgl.Marker(el)
@@ -69,31 +68,84 @@ async function carregarPontosDeRecarga() {
 
             marker.setPopup(popup);
         });
+    } catch (error) {
+        console.error('Erro ao carregar pontos de recarga:', error);
+        alert('Não foi possível carregar os pontos de recarga.');
+    }
+}
 
-        // Selecionar três pontos aleatórios
-        const pontosAleatorios = [];
-        while (pontosAleatorios.length < 3) {
-            const indexAleatorio = Math.floor(Math.random() * pontosDeRecarga.length);
-            if (!pontosAleatorios.includes(pontosDeRecarga[indexAleatorio])) {
-                pontosAleatorios.push(pontosDeRecarga[indexAleatorio]);
-            }
+document.getElementById('search-button').addEventListener('click', async () => {
+    const searchQuery = document.getElementById('search-bar').value;
+
+    if (!searchQuery) {
+        alert('Por favor, insira uma localização.');
+        return;
+    }
+
+    try {
+        // Geocodificação da localização inserida
+        const geocodeResponse = await fetch(
+            `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
+                searchQuery
+            )}.json?access_token=${mapboxgl.accessToken}`
+        );
+        const geocodeData = await geocodeResponse.json();
+
+        if (!geocodeData.features || geocodeData.features.length === 0) {
+            alert('Localização não encontrada. Tente novamente.');
+            return;
         }
 
-        // Exibir três pontos aleatórios na tabela
+        const [longitude, latitude] = geocodeData.features[0].center;
+
+        const pontosDeRecargaResponse = await fetch('http://localhost:3000/pontosDeRecarga');
+        const pontosDeRecarga = await pontosDeRecargaResponse.json();
+
+        const pontosOrdenados = pontosDeRecarga.map(ponto => {
+            const distance = calcularDistancia(latitude, longitude, ponto.coordenadas[1], ponto.coordenadas[0]);
+            return { ...ponto, distance };
+        }).sort((a, b) => a.distance - b.distance);
+
+        const tresPontosMaisProximos = pontosOrdenados.slice(0, 3);
+
+        // Atualizar a sidebar com os três pontos mais próximos
         const listaPontos = document.getElementById('lista-pontos');
         listaPontos.innerHTML = '';
 
-        pontosAleatorios.forEach(ponto => {
+        tresPontosMaisProximos.forEach(ponto => {
             const listItem = document.createElement('li');
-            listItem.innerHTML = `${ponto.nome} - ${ponto.endereco}`;
+            // Corrigido a interpolação da string
+            listItem.innerHTML = `
+                <img src="assets/images/Icone2.png" class="icon" alt="Ícone de recarga" />
+                ${ponto.nome} - ${ponto.endereco} (${ponto.distance.toFixed(2)} km)
+            `;
             listItem.onclick = () => {
                 map.flyTo({ center: ponto.coordenadas, zoom: 15 });
             };
             listaPontos.appendChild(listItem);
         });
 
+        // Centralizar o mapa na localização inserida
+        map.flyTo({ center: [longitude, latitude], zoom: 12 });
+
     } catch (error) {
-        console.error('Erro ao carregar pontos de recarga:', error);
-        alert('Não foi possível carregar os pontos de recarga.');
+        console.error('Erro ao buscar localização ou pontos de recarga:', error);
+        alert('Erro ao buscar a localização. Tente novamente.');
     }
+});
+
+function calcularDistancia(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Raio da Terra em km
+    const dLat = (lat2 - lat1) * (Math.PI / 180);
+    const dLon = (lon2 - lon1) * (Math.PI / 180);
+
+    const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * (Math.PI / 180)) *
+        Math.cos(lat2 * (Math.PI / 180)) *
+        Math.sin(dLon / 2) *
+        Math.sin(dLon / 2);
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c; // Distância em km
 }

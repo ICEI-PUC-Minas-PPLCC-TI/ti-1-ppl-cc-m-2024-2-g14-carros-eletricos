@@ -121,3 +121,22 @@ header {
     vertical-align: middle;
 }
 
+.search-container {
+    width: 100%;
+    position: fixed;
+    gap: 10px;
+    
+}
+
+.search-container input {
+    
+    padding: 10px;
+    border: 1px solid #00FA9A;
+    border-radius: 4px;
+    background-color: #121212;
+    color: white;
+    font-size: 14px;
+    right: 10px;
+    
+}
+
