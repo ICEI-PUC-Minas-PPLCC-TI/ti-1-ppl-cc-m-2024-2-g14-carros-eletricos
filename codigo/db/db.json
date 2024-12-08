@@ -367,8 +367,7 @@
       "tipo": "Hatch",
       "preco": "R$ 140.000",
       "quantidade": 8500,
-      "imagem": "BYD Dolphin.webp",
-      "id": "668b"
+      "imagem": "BYD Dolphin.webp"
     },
     {
       "posicao": 2,
@@ -377,8 +376,7 @@
       "tipo": "SUV",
       "preco": "R$ 220.000",
       "quantidade": 7200,
-      "imagem": "BYD Song.webp",
-      "id": "ce65"
+      "imagem": "BYD Song.webp"
     },
     {
       "posicao": 3,
@@ -387,8 +385,7 @@
       "tipo": "Sedan",
       "preco": "R$ 250.000",
       "quantidade": 6500,
-      "imagem": "Tesla Model 3.png",
-      "id": "3b74"
+      "imagem": "Tesla Model 3.png"
     },
     {
       "posicao": 4,
@@ -397,8 +394,7 @@
       "tipo": "SUV",
       "preco": "R$ 214.000",
       "quantidade": 6000,
-      "imagem": "Haval H6.png",
-      "id": "288d"
+      "imagem": "Haval H6.png"
     },
     {
       "posicao": 5,
@@ -407,59 +403,41 @@
       "tipo": "SUV",
       "preco": "R$ 210.990",
       "quantidade": 5900,
-      "imagem": "Corolla Cross.jpeg",
-      "id": "aba3"
+      "imagem": "Corolla Cross.jpeg"
     }
   ],
- "Rankings":[
-  {
-    "posicao": 1,
-    "modelo": "BYD Dolphin",
-    "ano": 2024,
-    "tipo": "Hatch",
-    "preco": "R$ 140.000",
-    "quantidade": 8500,
-    "imagem": "BYD Dolphin.webp"
-},
-{
-    "posicao": 2,
-    "modelo": "BYD Song Plus",
-    "ano": 2024,
-    "tipo": "SUV",
-    "preco": "R$ 220.000",
-    "quantidade": 7200,
-    "imagem": "BYD Song.webp"
-},
-{
-    "posicao": 3,
-    "modelo": "Tesla Model 3",
-    "ano": 2024,
-    "tipo": "Sedan",
-    "preco": "R$ 250.000",
-    "quantidade": 6500,
-    "imagem": "Tesla Model 3.png"
-},
-{
-    "posicao": 4,
-    "modelo": "Haval H6 HEV",
-    "ano": 2024,
-    "tipo": "SUV",
-    "preco": "R$ 214.000",
-    "quantidade": 6000,
-    "imagem": "Haval H6.png"
-},
-{
-    "posicao": 5,
-    "modelo": "Toyota Corolla Cross Hybrid",
-    "ano": 2024,
-    "tipo": "SUV",
-    "preco": "R$ 210.990",
-    "quantidade": 5900,
-    "imagem": "Corolla Cross.jpeg"
-}
- ],
-
- 
+  "resultados": [
+    {},
+    {
+      "id": "dc46",
+      "potencia": 23,
+      "bateria": 23,
+      "porcentagens": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "tempoCarregamento": [
+        "6.00",
+        "12.00",
+        "18.00",
+        "24.00",
+        "30.00",
+        "36.00",
+        "42.00",
+        "48.00",
+        "54.00",
+        "60.00"
+      ]
+    }
+  ],
   "perguntas": [
     {
       "id": "1",
