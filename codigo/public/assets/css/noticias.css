@@ -117,6 +117,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    color: #f3f3f3;
 }
 
 .news-item {
