@@ -30,7 +30,7 @@
       "marca": "Seres",
       "modelo": "Seres 3",
       "tipo": "SUV elétrico",
-      "imagem": "imgs/seres3.jpg",
+      "imagem": "../public/assets/images/seres3.jpg",
       "link_venda": "https://www.driveseres.com.br/seres-3-bev",
       "id": "1e93"
     },
@@ -41,7 +41,7 @@
       "marca": "Chevrolet",
       "modelo": "Bolt EV",
       "tipo": "Hatch elétrico",
-      "imagem": "imgs/-Chevy-Bolt.jpg",
+      "imagem": "../public/assets/images/-Chevy-Bolt.jpg",
       "link_venda": "https://www.chevrolet.com.br/eletrico/bolt-euv",
       "id": "a926"
     },
@@ -52,7 +52,7 @@
       "marca": "Tesla",
       "modelo": "Model 3",
       "tipo": "Sedan elétrico",
-      "imagem": "imgs/Tesla Model3333.jpg",
+      "imagem": "../public/assets/images/Tesla Model3333.jpg",
       "link_venda": "https://www.tesla.com/model3",
       "id": "5fe5"
     },
@@ -63,7 +63,7 @@
       "marca": "Nissan",
       "modelo": "Leaf",
       "tipo": "Hatch elétrico",
-      "imagem": "imgs/NissanLeaf.jpg",
+      "imagem": "../public/assets/images/NissanLeaf.jpg",
       "link_venda": "imgs/nisan23.jpg",
       "id": "d4b1"
     },
@@ -74,7 +74,7 @@
       "marca": "Audi",
       "modelo": "e-tron",
       "tipo": "SUV elétrico",
-      "imagem": "imgs/Audi e-tron.jpg",
+      "imagem": "../public/assets/images/Audi e-tron.jpg",
       "link_venda": "https://www.audi.com.br/br/web/pt/models/e-tron-gt/audi-rs-e-tron-gt.html",
       "id": "0a99"
     },
@@ -85,7 +85,7 @@
       "marca": "BMW",
       "modelo": "i3",
       "tipo": "Hatch elétrico",
-      "imagem": "imgs/BMW-i3.jpg",
+      "imagem": "../public/assets/images/BMW-i3.jpg",
       "link_venda": "https://eurovillebmw.com.br/bmw/ofertas",
       "id": "5df4"
     },
@@ -96,7 +96,7 @@
       "marca": "Renault",
       "modelo": "Zoe",
       "tipo": "Hatch elétrico",
-      "imagem": "imgs/renault-zoe.jpg",
+      "imagem": "../public/assets/images/renault-zoe.jpg",
       "link_venda": "https://www.renault.com.br/manuais/zoe.html",
       "id": "14be"
     },
@@ -107,7 +107,7 @@
       "marca": "Volkswagen",
       "modelo": "ID.4",
       "tipo": "SUV elétrico",
-      "imagem": "imgs/Volkswagen ID.44.jpg",
+      "imagem": "../public/assets/images/Volkswagen ID.44.jpg",
       "link_venda": "https://www.vw.com.br/pt/carros/ID4.html",
       "id": "da72"
     },
@@ -118,7 +118,7 @@
       "marca": "Jaguar",
       "modelo": "I-PACE",
       "tipo": "SUV elétrico",
-      "imagem": "imgs/Jaguar I-PACE.jpg",
+      "imagem": "../public/assets/images/Jaguar I-PACE.jpg",
       "link_venda": "https://www.jaguarbrasil.com.br/jaguar-range/i-pace/index.html",
       "id": "65d1"
     },
@@ -129,7 +129,7 @@
       "marca": "Porsche",
       "modelo": "Taycan",
       "tipo": "Sedan elétrico",
-      "imagem": "imgs/taycan.jpg",
+      "imagem": "../public/assets/images/taycan.jpg",
       "link_venda": "https://www.porsche.com/brazil/pt/models/taycan/",
       "id": "d15a"
     },
@@ -140,7 +140,7 @@
       "marca": "BYD",
       "modelo": "Song Plus",
       "tipo": "SUV elétrico",
-      "imagem": "imgs/BYD-Song-Plus-GL.jpg",
+      "imagem": "../public/assets/images/BYD-Song-Plus-GL.jpg",
       "link_venda": "https://www.byd.com/br/car/song-plus-dmi",
       "id": "52dc"
     },
@@ -151,7 +151,7 @@
       "marca": "Fiat",
       "modelo": "500e",
       "tipo": "Compacto elétrico",
-      "imagem": "imgs/Fiat 500e.jpg",
+      "imagem": "../public/assets/images/Fiat 500e.jpg",
       "link_venda": "https://500e.fiat.com.br",
       "id": "8f38"
     },
@@ -162,7 +162,7 @@
       "marca": "Mercedes-Benz",
       "modelo": "EQC",
       "tipo": "SUV elétrico",
-      "imagem": "imgs/Mercedes_EQC_Front.jpg",
+      "imagem": "../public/assets/images/Mercedes_EQC_Front.jpg",
       "link_venda": "https://www2.mercedes-benz.com.br",
       "id": "5881"
     },
@@ -173,7 +173,7 @@
       "marca": "Hyundai",
       "modelo": "Kona Electric",
       "tipo": "SUV elétrico",
-      "imagem": "imgs/Hyundai-Kona-EV-.jpg",
+      "imagem": "../public/assets/images/Hyundai-Kona-EV-.jpg",
       "link_venda": "https://www.geracaohyundaihmb.com.br/novos/kona-electric-2024",
       "id": "4a6d"
     },
@@ -184,7 +184,7 @@
       "marca": "Mini",
       "modelo": "Cooper SE",
       "tipo": "Compacto elétrico",
-      "imagem": "imgs/mini.jpg",
+      "imagem": "../public/assets/images/mini.jpg",
       "link_venda": "https://www.mini.com.br/pt_BR/home.html",
       "id": "884d"
     }
@@ -375,7 +375,7 @@
       "tipo": "Hatch",
       "preco": "R$ 140.000",
       "quantidade": 8500,
-      "imagem": "BYD Dolphin.webp",
+      "imagem": "../public/assets/images/BYD Dolphin.webp",
       "id": "9f02"
     },
     {
@@ -385,7 +385,7 @@
       "tipo": "SUV",
       "preco": "R$ 220.000",
       "quantidade": 7200,
-      "imagem": "BYD Song.webp",
+      "imagem": "../public/assets/images/BYD Song.webp",
       "id": "0858"
     },
     {
@@ -395,7 +395,7 @@
       "tipo": "Sedan",
       "preco": "R$ 250.000",
       "quantidade": 6500,
-      "imagem": "Tesla Model 3.png",
+      "imagem": "../public/assets/images/Tesla Model3333.jpg",
       "id": "45ac"
     },
     {
@@ -405,7 +405,7 @@
       "tipo": "SUV",
       "preco": "R$ 214.000",
       "quantidade": 6000,
-      "imagem": "Haval H6.png",
+      "imagem": "../public/assets/images/Haval H6.png",
       "id": "a5de"
     },
     {
@@ -415,7 +415,7 @@
       "tipo": "SUV",
       "preco": "R$ 210.990",
       "quantidade": 5900,
-      "imagem": "Corolla Cross.jpeg",
+      "imagem": "../public/assets/images/Corolla Cross.jpeg",
       "id": "7aa2"
     }
   ],
