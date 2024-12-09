@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Carros ELétricos</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.3.1/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.3.1/mapbox-gl-directions.css" type="text/css">
+
+</head>
+<body>
+    <header>
+        <img src="assets/images/image.png" alt="Logo ChargeUp" id="logo" />
+        <ul class="menu">
+            <li><a href="index.html" class="menu-button">Início</a></li>
+            <li><a href="favoritos.html" class="menu-button">Favoritos</a></li>
+            <li><a href="mapa.html" class="menu-button">Mapa</a></li>
+            <li><a href="simulador.html" class="menu-button">Simulador Econômico</a></li>
+            <li><a href="catalogo.html" class="menu-button">Catálogo</a></li>
+            <li><a href="noticias.html" class="menu-button">Notícias</a></li>
+            <li><a href="quiz.html" class="menu-button">Quiz</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <!-- Quiz -->
+        <div id="quiz-container">
+            <!-- Perguntas do quiz serão carregadas aqui pelo JavaScript -->
+        </div>
+
+        <!-- Resultado -->
+        <div id="result-container" style="display: none;">
+            <!-- O resultado será inserido dinamicamente aqui -->
+        </div>
+    </main>
+
+    <footer>
+        © 2024 Quiz Carro Elétrico. Todos os direitos reservados.
+    </footer>
+
+    <script src="assets/js/quiz.js"></script> <!-- Incluindo o arquivo JavaScript -->
+</body>
+</html>
