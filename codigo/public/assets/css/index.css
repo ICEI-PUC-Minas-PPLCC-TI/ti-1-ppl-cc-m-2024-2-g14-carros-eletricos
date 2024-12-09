@@ -52,24 +52,26 @@ header {
     align-items: center;
     width: 100%;
     margin-right: 400px;
-
+  
+    margin-left: 300px;
     
     
 }
 
 .menu-button {
-    background: linear-gradient(var(--linear-gradient)); /* Gradiente no fundo */
-    background-clip: padding-box;
-  
-    -webkit-background-clip: text; /* Clip no texto para mostrar o gradiente */
+   
+    gap: 500px;
+    background: linear-gradient(var(--linear-gradient));
+    color: white; /* Texto branco para contraste */
     background-clip: text; /* Clip no texto para mostrar o gradiente */
     font-weight: bold;
     transition: background-color 0.3s ease;
     flex-grow: 1;
-    border-bottom: 5px solid transparent ;
-    
+    border-bottom: 2px solid #00FA9A;
+    padding: 30px;
     justify-content: center;
-    border-radius: 10x;
+    border-radius: 8px;
+    text-decoration: none;
     
 }
 
