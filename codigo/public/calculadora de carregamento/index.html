@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Carregamento</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/images/image.png" alt="Logo ChargeUp" id="logo" />
+    <ul class="menu">
+        <li><a href="../index.html" class="menu-button">Início</a></li>
+        <li><a href="../favoritos.html" class="menu-button">Favoritos</a></li>
+        <li><a href="../mapa.html" class="menu-button">Mapa</a></li>
+        <li><a href="../Funcionalidade-Simulador/index.html" class="menu-button">Simulador Econômico</a></li>
+        <li><a href="index.html" menu-button">Calculadora de Carregamento</a></li>
+        <li><a href="../catalogo.html" class="menu-button">Catálogo</a></li>
+        <li><a href="../noticias.html" class="menu-button">Notícias</a></li>
+        <li><a href="../quiz.html class="menu-button">Quiz</a></li>
+    </ul>
+</header>
+
+  <div class="container">
+    <div class="calculadora">
+      <h1>Estimativa do Tempo de Carregamento</h1>
+      <form id="carregamento-form">
+        <div class="campo">
+          <span>Potência de carregamento (kW)*</span>
+          <div contenteditable="true" data-campo="potencia" class="campo-editavel" placeholder="0"></div>
+        </div>
+
+        <div class="campo">
+          <span>Bateria útil (kWh)*</span>
+          <div contenteditable="true" data-campo="bateria" class="campo-editavel" placeholder="0"></div>
+        </div>
+
+        <div class="resultado">
+          <h2>Resultados:</h2>
+          <p id="resultado">Preencha os valores e clique em calcular para visualizar.</p>
+        </div>
+
+        <div class="botoes">
+          <button type="button" id="calcular">Calcular</button>
+          <button type="button" id="loadData">Carregar Dados Salvos</button>
+        </div>
+      </form>
+
+      <h2>Gráfico de Tempo de Carregamento</h2>
+      <canvas id="graficoCarregamento" width="400" height="200"></canvas>
+
+      <h2>Resultados Salvos</h2>
+      <div id="resultsDiv"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
