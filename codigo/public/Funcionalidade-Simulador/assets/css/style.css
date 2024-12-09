@@ -10,15 +10,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background: linear-gradient(var(--linear-gradient));
+}
 
 #container {
     width: 1000px;
-    height: 100px;
+    height: 500px;
     display:grid;
     align-items: center;
     justify-content: center;
     margin-left: 800px;
     color: #d1d5db;
+    margin-top: 50px;
 }
 
 #simulador {
@@ -32,6 +36,9 @@
     margin-right:550px;
     top: 20px;
     z-index: 1;
+    width: 50%;
+    height: 100%;
+
 }
 
 #simulador h2 {
@@ -105,16 +112,23 @@ header {
     list-style: none;
     gap: 1rem;
     padding: 0;
+    
+    margin-right: 600px;
 }
 .menu-button {
-    padding: 0.5rem 1rem;
-    background-color: rgb(86, 51, 209);
-    color: white;
-    border: none;
-    border-radius: 4px;
+   
+    gap: 500px;
+    
+    color: white; /* Texto branco para contraste */
     font-weight: bold;
-    text-decoration: none;
     transition: background-color 0.3s ease;
+   
+    border-bottom: 2px solid #00FA9A;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    
 }
 #logo {
     width: 300px;

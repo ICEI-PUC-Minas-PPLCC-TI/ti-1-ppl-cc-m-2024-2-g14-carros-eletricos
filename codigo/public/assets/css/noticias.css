@@ -57,16 +57,14 @@ header {
     gap: 500px;
     
     color: white; /* Texto branco para contraste */
-   
-    font-weight:bold;
+    font-weight: bold;
     transition: background-color 0.3s ease;
-    flex-grow: 1;
+   
     border-bottom: 2px solid #00FA9A;
-    padding: 30px;
+    padding: 10px;
     justify-content: center;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 18px
     
 }
 
