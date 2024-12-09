@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #dad4d4;
+    background:linear-gradient(var(--linear-gradient));
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,6 +13,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --linear-gradient: 90deg, #00FA9A, #48D1CC, #191970;
+    --text-color: #ffff;
 }
 
 header {
