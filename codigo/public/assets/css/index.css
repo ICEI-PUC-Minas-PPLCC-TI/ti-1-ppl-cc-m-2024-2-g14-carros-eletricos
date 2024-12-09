@@ -61,9 +61,9 @@ header {
 .menu-button {
    
     gap: 500px;
-    background: linear-gradient(var(--linear-gradient));
+    
     color: white; /* Texto branco para contraste */
-    background-clip: text; /* Clip no texto para mostrar o gradiente */
+    
     font-weight: bold;
     transition: background-color 0.3s ease;
     flex-grow: 1;

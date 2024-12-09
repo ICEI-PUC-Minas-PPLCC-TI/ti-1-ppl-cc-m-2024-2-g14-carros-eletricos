@@ -22,52 +22,55 @@ body {
     min-height: 100vh;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #1a1a2e;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
     color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    
+    font-size: 16px;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 8rem;
+    gap: 1rem;
     padding: 0;
     align-items: center;
-    width: 60%;
-   
-   margin-left: 350px;
+    width: 100%;
     margin-right: 400px;
+  
+    margin-left: 300px;
+    
+    
 }
 
 .menu-button {
-    padding: 1rem 2rem;
-    background: linear-gradient(var(--linear-gradient)); /* Gradiente no fundo */
-    color: transparent; /* Tornar o texto transparente */
-    -webkit-background-clip: text; /* Clip no texto para mostrar o gradiente */
-    background-clip: text; /* Clip no texto para mostrar o gradiente */
-    border-bottom: 1px solid #00FA9A;
-    border-radius: 4px;
+   
+    gap: 500px;
+    
+    color: white; /* Texto branco para contraste */
+    background: transparent;
     font-weight: bold;
-    text-decoration: none;
     transition: background-color 0.3s ease;
     flex-grow: 1;
-    min-width: 120px;
-    display: flex;
+    border-bottom: 2px solid #00FA9A;
+    padding: 30px;
     justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
     
-  
-   
 }
 
 #logo {
@@ -282,31 +285,8 @@ canvas {
     font-weight:bold;
     cursor: pointer;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #1a1a2e;
-    color: white;
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1rem;
-    padding: 0;
-}
-.menu-button {
-    padding: 0.5rem 1rem;
-    background-color: rgb(86, 51, 209);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
+
+
 #logo {
     width: 300px;
     height: auto;

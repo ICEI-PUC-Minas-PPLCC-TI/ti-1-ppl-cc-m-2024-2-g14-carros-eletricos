@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 :root {
     --linear-gradient: 90deg, #00FA9A, #48D1CC, #191970;
     --text-color: #ffff;
@@ -44,28 +44,30 @@ header {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 8rem;
+    gap: 1rem;
     padding: 0;
     align-items: center;
-    width: 60%;
+    width: 100%;
     margin-right: 400px;
+  
+    margin-left: 300px;
+    
+    
 }
-
 .menu-button {
-    padding: 1rem 2rem;
-    background: linear-gradient(var(--linear-gradient)); /* Gradiente no fundo */
-    background-color: #4B0082; /* Cor roxa escura */
+   
+    gap: 500px;
+    
     color: white; /* Texto branco para contraste */
-    -webkit-background-clip: text; /* Clip no texto para mostrar o gradiente */
-    background-clip: text; /* Clip no texto para mostrar o gradiente */
+    
     font-weight: bold;
-    text-decoration: none;
     transition: background-color 0.3s ease;
     flex-grow: 1;
-   
-    min-width: 120px;
-    display: flex;
+    border-bottom: 2px solid #00FA9A;
+    padding: 30px;
     justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
     
 }
 
