@@ -12,12 +12,12 @@
 }
 
 #container {
-    width: 100%;
-    height: 100vh;
+    width: 1000px;
+    height: 100px;
     display:grid;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(var(--linear-gradient));
+    margin-left: 800px;
     color: #d1d5db;
 }
 
@@ -30,6 +30,8 @@
     flex-direction: column;
     gap: 10px;
     margin-right:550px;
+    top: 20px;
+    z-index: 1;
 }
 
 #simulador h2 {

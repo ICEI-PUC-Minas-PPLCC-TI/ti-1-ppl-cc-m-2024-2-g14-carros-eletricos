@@ -358,7 +358,15 @@
       "id": "e140"
     }
   ],
-  "cadastroCalculo": [],
+  "cadastroCalculo": [
+    {
+      "id": "7ad6",
+      "distance": 43,
+      "fuelCost": 4.26036866359447,
+      "electricCost": 43,
+      "savings": -38.73963133640553
+    }
+  ],
   "Rankings": [
     {
       "posicao": 1,
@@ -367,7 +375,8 @@
       "tipo": "Hatch",
       "preco": "R$ 140.000",
       "quantidade": 8500,
-      "imagem": "BYD Dolphin.webp"
+      "imagem": "BYD Dolphin.webp",
+      "id": "9f02"
     },
     {
       "posicao": 2,
@@ -376,7 +385,8 @@
       "tipo": "SUV",
       "preco": "R$ 220.000",
       "quantidade": 7200,
-      "imagem": "BYD Song.webp"
+      "imagem": "BYD Song.webp",
+      "id": "0858"
     },
     {
       "posicao": 3,
@@ -385,7 +395,8 @@
       "tipo": "Sedan",
       "preco": "R$ 250.000",
       "quantidade": 6500,
-      "imagem": "Tesla Model 3.png"
+      "imagem": "Tesla Model 3.png",
+      "id": "45ac"
     },
     {
       "posicao": 4,
@@ -394,7 +405,8 @@
       "tipo": "SUV",
       "preco": "R$ 214.000",
       "quantidade": 6000,
-      "imagem": "Haval H6.png"
+      "imagem": "Haval H6.png",
+      "id": "a5de"
     },
     {
       "posicao": 5,
@@ -403,41 +415,11 @@
       "tipo": "SUV",
       "preco": "R$ 210.990",
       "quantidade": 5900,
-      "imagem": "Corolla Cross.jpeg"
+      "imagem": "Corolla Cross.jpeg",
+      "id": "7aa2"
     }
   ],
-  "resultados": [
-    {},
-    {
-      "id": "dc46",
-      "potencia": 23,
-      "bateria": 23,
-      "porcentagens": [
-        10,
-        20,
-        30,
-        40,
-        50,
-        60,
-        70,
-        80,
-        90,
-        100
-      ],
-      "tempoCarregamento": [
-        "6.00",
-        "12.00",
-        "18.00",
-        "24.00",
-        "30.00",
-        "36.00",
-        "42.00",
-        "48.00",
-        "54.00",
-        "60.00"
-      ]
-    }
-  ],
+  "resultados": [],
   "perguntas": [
     {
       "id": "1",

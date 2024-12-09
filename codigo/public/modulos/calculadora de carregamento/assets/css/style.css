@@ -64,6 +64,8 @@ header {
     place-items: center;
     padding: 20px;
     flex: 1;
+    margin-left: 500px;
+    margin-top: 200px
 }
 
 .calculadora {
